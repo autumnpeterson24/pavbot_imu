@@ -54,7 +54,7 @@ public:
 // CONSTRUCTOR -----------------------------
   PavbotIMU() : Node("pavbot_imu") {
     // Parameters -----------------
-    port = declare_parameter<std::string>("port", "/dev/ttyUSB0"); // This is is the Arduino is in the USB0 slot it's just a placeholder
+    port = declare_parameter<std::string>("port", "/dev/ttyUSB0"); 
     baud = declare_parameter<int>("baud", 115200);
     timeout_ms = declare_parameter<int>("timeout_ms", 500);
 
@@ -64,13 +64,12 @@ public:
 
 
     // timers ----------------
-    timer = create_wall_timer( std::chrono::milliseconds(50), std::bind(&PavbotIMU::update, this) // periodic timer for constant update
+    timer = create_wall_timer( std::chrono::milliseconds(500), std::bind(&PavbotIMU::update, this) // periodic timer for constant update
     );
 
 
     // Logging to the screen when the node is created to make sure it is there :)
     RCLCPP_INFO(get_logger(), "IMU node started"); // log that the node started 
-    RCLCPP_INFO(get_logger(), "Chatbot, make me a hoot chocolate!"); // fun message
   }
 
 
