@@ -1,0 +1,63 @@
+[0.067s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.263s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.362s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[10.628s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In constructor ‘[01m[KPavbotIMU::PavbotIMU()[m[K’:
+[10.629s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:79:12:[m[K [01;31m[Kerror: [m[K‘[01m[K::open[m[K’ has not been declared; did you mean ‘[01m[Kpopen[m[K’?
+[10.629s]    79 |     fd = ::[01;31m[Kopen[m[K(port.c_str(), O_RDONLY | O_NOCTTY | O_SYNC);
+[10.630s]       |            [01;31m[K^~~~[m[K
+[10.630s]       |            [32m[Kpopen[m[K
+[10.650s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:79:31:[m[K [01;31m[Kerror: [m[K‘[01m[KO_RDONLY[m[K’ was not declared in this scope
+[10.651s]    79 |     fd = ::open(port.c_str(), [01;31m[KO_RDONLY[m[K | O_NOCTTY | O_SYNC);
+[10.651s]       |                               [01;31m[K^~~~~~~~[m[K
+[10.672s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:79:42:[m[K [01;31m[Kerror: [m[K‘[01m[KO_NOCTTY[m[K’ was not declared in this scope; did you mean ‘[01m[KENOTTY[m[K’?
+[10.673s]    79 |    fd = ::open(port.c_str(), O_RDONLY | [01;31m[KO_NOCTTY[m[K | O_SYNC);
+[10.673s]       |                                         [01;31m[K^~~~~~~~[m[K
+[10.674s]       |                                         [32m[KENOTTY[m[K
+[10.693s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:79:53:[m[K [01;31m[Kerror: [m[K‘[01m[KO_SYNC[m[K’ was not declared in this scope
+[10.693s]    79 | ::open(port.c_str(), O_RDONLY | O_NOCTTY | [01;31m[KO_SYNC[m[K);
+[10.693s]       |                                            [01;31m[K^~~~~~[m[K
+[10.694s] 
+[10.696s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:86:20:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[KPavbotIMU::PavbotIMU()::termios tty[m[K’ has initializer but incomplete type
+[10.696s]    86 |     struct termios [01;31m[Ktty[m[K{};
+[10.697s]       |                    [01;31m[K^~~[m[K
+[10.720s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcgetattr[m[K’ was not declared in this scope
+[10.721s]    87 |     [01;31m[Ktcgetattr[m[K(fd, &tty);
+[10.722s]       |     [01;31m[K^~~~~~~~~[m[K
+[10.743s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:89:23:[m[K [01;31m[Kerror: [m[K‘[01m[KB115200[m[K’ was not declared in this scope
+[10.743s]    89 |     cfsetospeed(&tty, [01;31m[KB115200[m[K);
+[10.744s]       |                       [01;31m[K^~~~~~~[m[K
+[10.767s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:89:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcfsetospeed[m[K’ was not declared in this scope
+[10.767s]    89 |     [01;31m[Kcfsetospeed[m[K(&tty, B115200);
+[10.768s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[10.791s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:90:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcfsetispeed[m[K’ was not declared in this scope
+[10.792s]    90 |     [01;31m[Kcfsetispeed[m[K(&tty, B115200);
+[10.792s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[10.812s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:92:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOCAL[m[K’ was not declared in this scope; did you mean ‘[01m[KRCL_LOCAL[m[K’?
+[10.812s]    92 |     tty.c_cflag |= ([01;31m[KCLOCAL[m[K | CREAD);
+[10.813s]       |                     [01;31m[K^~~~~~[m[K
+[10.813s]       |                     [32m[KRCL_LOCAL[m[K
+[10.835s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:92:30:[m[K [01;31m[Kerror: [m[K‘[01m[KCREAD[m[K’ was not declared in this scope
+[10.836s]    92 |     tty.c_cflag |= (CLOCAL | [01;31m[KCREAD[m[K);
+[10.836s]       |                              [01;31m[K^~~~~[m[K
+[10.854s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:93:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCSIZE[m[K’ was not declared in this scope
+[10.855s]    93 |     tty.c_cflag &= ~[01;31m[KCSIZE[m[K;
+[10.855s]       |                     [01;31m[K^~~~~[m[K
+[10.873s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:94:20:[m[K [01;31m[Kerror: [m[K‘[01m[KCS8[m[K’ was not declared in this scope
+[10.873s]    94 |     tty.c_cflag |= [01;31m[KCS8[m[K;
+[10.874s]       |                    [01;31m[K^~~[m[K
+[10.894s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:95:21:[m[K [01;31m[Kerror: [m[K‘[01m[KPARENB[m[K’ was not declared in this scope
+[10.894s]    95 |     tty.c_cflag &= ~[01;31m[KPARENB[m[K;
+[10.895s]       |                     [01;31m[K^~~~~~[m[K
+[10.914s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:96:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCSTOPB[m[K’ was not declared in this scope
+[10.915s]    96 |     tty.c_cflag &= ~[01;31m[KCSTOPB[m[K;
+[10.915s]       |                     [01;31m[K^~~~~~[m[K
+[10.940s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:98:19:[m[K [01;31m[Kerror: [m[K‘[01m[KTCSANOW[m[K’ was not declared in this scope
+[10.940s]    98 |     tcsetattr(fd, [01;31m[KTCSANOW[m[K, &tty);
+[10.941s]       |                   [01;31m[K^~~~~~~[m[K
+[10.961s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:98:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcsetattr[m[K’ was not declared in this scope
+[10.962s]    98 |     [01;31m[Ktcsetattr[m[K(fd, TCSANOW, &tty);
+[10.962s]       |     [01;31m[K^~~~~~~~~[m[K
+[14.218s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[14.219s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[14.220s] gmake: *** [Makefile:146: all] Error 2
+[14.227s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4

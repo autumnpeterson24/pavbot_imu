@@ -1,0 +1,27 @@
+[0.065s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.327s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[10.685s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In constructor ‘[01m[KPavbotIMU::PavbotIMU()[m[K’:
+[10.686s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:101:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct termios[m[K’ has no member named ‘[01m[Kc_flag[m[K’; did you mean ‘[01m[Kc_iflag[m[K’?
+[10.687s]   101 |     tty.[01;31m[Kc_flag[m[K &= ~PARENB;
+[10.688s]       |         [01;31m[K^~~~~~[m[K
+[10.694s]       |         [32m[Kc_iflag[m[K
+[10.695s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:102:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct termios[m[K’ has no member named ‘[01m[Kc_flag[m[K’; did you mean ‘[01m[Kc_iflag[m[K’?
+[10.695s]   102 |     tty.[01;31m[Kc_flag[m[K &= ~CSTOPB;
+[10.696s]       |         [01;31m[K^~~~~~[m[K
+[10.697s]       |         [32m[Kc_iflag[m[K
+[10.697s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:103:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct termios[m[K’ has no member named ‘[01m[Kc_flag[m[K’; did you mean ‘[01m[Kc_iflag[m[K’?
+[10.698s]   103 |     tty.[01;31m[Kc_flag[m[K &= ~CSIZE;
+[10.699s]       |         [01;31m[K^~~~~~[m[K
+[10.700s]       |         [32m[Kc_iflag[m[K
+[10.700s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:104:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct termios[m[K’ has no member named ‘[01m[Kc_flag[m[K’; did you mean ‘[01m[Kc_iflag[m[K’?
+[10.701s]   104 |     tty.[01;31m[Kc_flag[m[K |= CS8;
+[10.710s]       |         [01;31m[K^~~~~~[m[K
+[10.711s]       |         [32m[Kc_iflag[m[K
+[10.712s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct termios[m[K’ has no member named ‘[01m[Kc_flag[m[K’; did you mean ‘[01m[Kc_iflag[m[K’?
+[10.712s]   105 |     tty.[01;31m[Kc_flag[m[K &= ~CRTSCTS;
+[10.713s]       |         [01;31m[K^~~~~~[m[K
+[10.714s]       |         [32m[Kc_iflag[m[K
+[13.942s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[13.944s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[13.945s] gmake: *** [Makefile:146: all] Error 2
+[13.968s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4

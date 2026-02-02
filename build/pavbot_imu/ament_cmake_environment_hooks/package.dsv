@@ -1,0 +1,4 @@
+source;share/pavbot_imu/local_setup.bash
+source;share/pavbot_imu/local_setup.dsv
+source;share/pavbot_imu/local_setup.sh
+source;share/pavbot_imu/local_setup.zsh

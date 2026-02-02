@@ -1,0 +1,10 @@
+/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu/CMakeFiles/uninstall.dir
+/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu/CMakeFiles/pavbot_imu_uninstall.dir
+/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu/CMakeFiles/pavbot_imu.dir
+/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu/CMakeFiles/test.dir
+/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu/CMakeFiles/edit_cache.dir
+/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu/CMakeFiles/rebuild_cache.dir
+/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu/CMakeFiles/list_install_components.dir
+/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu/CMakeFiles/install.dir
+/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu/CMakeFiles/install/local.dir
+/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu/CMakeFiles/install/strip.dir

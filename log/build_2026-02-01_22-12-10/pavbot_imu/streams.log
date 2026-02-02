@@ -1,0 +1,121 @@
+[0.071s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.262s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.364s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[11.009s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In constructor ‘[01m[KPavbotIMU::PavbotIMU()[m[K’:
+[11.010s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:67:5:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > > >[m[K’} and ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >[m[K’)
+[11.012s]    67 |     [01;31m[K)[m[K;
+[11.012s]       |     [01;31m[K^[m[K
+[11.013s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[11.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.014s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[11.015s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > >][m[K’
+[11.015s]   363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[11.016s]       |         [01;36m[K^~~~~~~~[m[K
+[11.016s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.017s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >&; _Tp = rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > >][m[K’:
+[11.017s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >][m[K’
+[11.018s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:67:5:[m[K   required from here
+[11.018s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > > >&>[m[K’
+[11.019s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[11.019s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[11.020s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > >][m[K’
+[11.020s]   374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[11.021s]       |         [01;36m[K^~~~~~~~[m[K
+[11.021s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.022s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:67:5:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[11.022s]    67 |     [01;36m[K)[m[K;
+[11.023s]       |     [01;36m[K^[m[K
+[11.024s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[11.024s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.025s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[11.026s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > >][m[K’
+[11.026s]   391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[11.027s]       |         [01;36m[K^~~~~~~~[m[K
+[11.028s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.029s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >; _Tp = rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > >][m[K’:
+[11.031s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >][m[K’
+[11.031s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:67:5:[m[K   required from here
+[11.032s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > > >&>[m[K’
+[11.033s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[11.036s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[11.037s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > >][m[K’
+[11.037s]   399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[11.037s]       |         [01;36m[K^~~~~~~~[m[K
+[11.038s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.038s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:67:5:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[11.039s]    67 |     [01;36m[K)[m[K;
+[11.039s]       |     [01;36m[K^[m[K
+[11.040s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[11.040s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.041s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[11.042s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > >][m[K’
+[11.043s]   359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[11.044s]       |                   [01;36m[K^~~~~~~~[m[K
+[11.044s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kconst std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > > >&[m[K’
+[11.045s]   359 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[11.045s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.046s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > >][m[K’
+[11.046s]   383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[11.046s]       |       [01;36m[K^~~~~~~~[m[K
+[11.047s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > > >&&[m[K’
+[11.047s]   383 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[11.048s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[11.079s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:79:12:[m[K [01;31m[Kerror: [m[K‘[01m[K::open[m[K’ has not been declared; did you mean ‘[01m[Kpopen[m[K’?
+[11.080s]    79 |     fd = ::[01;31m[Kopen[m[K(port.c_str(), O_RDONLY | O_NOCTTY | O_SYNC);
+[11.080s]       |            [01;31m[K^~~~[m[K
+[11.081s]       |            [32m[Kpopen[m[K
+[11.101s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:79:31:[m[K [01;31m[Kerror: [m[K‘[01m[KO_RDONLY[m[K’ was not declared in this scope
+[11.102s]    79 |     fd = ::open(port.c_str(), [01;31m[KO_RDONLY[m[K | O_NOCTTY | O_SYNC);
+[11.103s]       |                               [01;31m[K^~~~~~~~[m[K
+[11.123s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:79:42:[m[K [01;31m[Kerror: [m[K‘[01m[KO_NOCTTY[m[K’ was not declared in this scope; did you mean ‘[01m[KENOTTY[m[K’?
+[11.124s]    79 |    fd = ::open(port.c_str(), O_RDONLY | [01;31m[KO_NOCTTY[m[K | O_SYNC);
+[11.125s]       |                                         [01;31m[K^~~~~~~~[m[K
+[11.126s]       |                                         [32m[KENOTTY[m[K
+[11.149s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:79:53:[m[K [01;31m[Kerror: [m[K‘[01m[KO_SYNC[m[K’ was not declared in this scope
+[11.150s]    79 | ::open(port.c_str(), O_RDONLY | O_NOCTTY | [01;31m[KO_SYNC[m[K);
+[11.150s]       |                                            [01;31m[K^~~~~~[m[K
+[11.151s] 
+[11.152s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:86:20:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[KPavbotIMU::PavbotIMU()::termios tty[m[K’ has initializer but incomplete type
+[11.153s]    86 |     struct termios [01;31m[Ktty[m[K{};
+[11.154s]       |                    [01;31m[K^~~[m[K
+[11.176s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcgetattr[m[K’ was not declared in this scope
+[11.177s]    87 |     [01;31m[Ktcgetattr[m[K(fd, &tty);
+[11.177s]       |     [01;31m[K^~~~~~~~~[m[K
+[11.197s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:89:23:[m[K [01;31m[Kerror: [m[K‘[01m[KB115200[m[K’ was not declared in this scope
+[11.197s]    89 |     cfsetospeed(&tty, [01;31m[KB115200[m[K);
+[11.199s]       |                       [01;31m[K^~~~~~~[m[K
+[11.221s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:89:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcfsetospeed[m[K’ was not declared in this scope
+[11.222s]    89 |     [01;31m[Kcfsetospeed[m[K(&tty, B115200);
+[11.222s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[11.249s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:90:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcfsetispeed[m[K’ was not declared in this scope
+[11.250s]    90 |     [01;31m[Kcfsetispeed[m[K(&tty, B115200);
+[11.251s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[11.270s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:92:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOCAL[m[K’ was not declared in this scope; did you mean ‘[01m[KRCL_LOCAL[m[K’?
+[11.271s]    92 |     tty.c_cflag |= ([01;31m[KCLOCAL[m[K | CREAD);
+[11.271s]       |                     [01;31m[K^~~~~~[m[K
+[11.272s]       |                     [32m[KRCL_LOCAL[m[K
+[11.291s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:92:30:[m[K [01;31m[Kerror: [m[K‘[01m[KCREAD[m[K’ was not declared in this scope
+[11.291s]    92 |     tty.c_cflag |= (CLOCAL | [01;31m[KCREAD[m[K);
+[11.292s]       |                              [01;31m[K^~~~~[m[K
+[11.311s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:93:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCSIZE[m[K’ was not declared in this scope
+[11.311s]    93 |     tty.c_cflag &= ~[01;31m[KCSIZE[m[K;
+[11.312s]       |                     [01;31m[K^~~~~[m[K
+[11.332s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:94:20:[m[K [01;31m[Kerror: [m[K‘[01m[KCS8[m[K’ was not declared in this scope
+[11.332s]    94 |     tty.c_cflag |= [01;31m[KCS8[m[K;
+[11.333s]       |                    [01;31m[K^~~[m[K
+[11.353s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:95:21:[m[K [01;31m[Kerror: [m[K‘[01m[KPARENB[m[K’ was not declared in this scope
+[11.354s]    95 |     tty.c_cflag &= ~[01;31m[KPARENB[m[K;
+[11.354s]       |                     [01;31m[K^~~~~~[m[K
+[11.373s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:96:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCSTOPB[m[K’ was not declared in this scope
+[11.374s]    96 |     tty.c_cflag &= ~[01;31m[KCSTOPB[m[K;
+[11.374s]       |                     [01;31m[K^~~~~~[m[K
+[11.394s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:98:19:[m[K [01;31m[Kerror: [m[K‘[01m[KTCSANOW[m[K’ was not declared in this scope
+[11.395s]    98 |     tcsetattr(fd, [01;31m[KTCSANOW[m[K, &tty);
+[11.396s]       |                   [01;31m[K^~~~~~~[m[K
+[11.417s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:98:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcsetattr[m[K’ was not declared in this scope
+[11.417s]    98 |     [01;31m[Ktcsetattr[m[K(fd, TCSANOW, &tty);
+[11.418s]       |     [01;31m[K^~~~~~~~~[m[K
+[14.391s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[14.392s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[14.393s] gmake: *** [Makefile:146: all] Error 2
+[14.420s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4

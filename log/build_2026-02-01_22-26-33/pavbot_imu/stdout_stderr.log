@@ -1,0 +1,25 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In constructor ‘[01m[KPavbotIMU::PavbotIMU()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:101:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct termios[m[K’ has no member named ‘[01m[Kc_flag[m[K’; did you mean ‘[01m[Kc_iflag[m[K’?
+  101 |     tty.[01;31m[Kc_flag[m[K &= ~PARENB;
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Kc_iflag[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:102:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct termios[m[K’ has no member named ‘[01m[Kc_flag[m[K’; did you mean ‘[01m[Kc_iflag[m[K’?
+  102 |     tty.[01;31m[Kc_flag[m[K &= ~CSTOPB;
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Kc_iflag[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:103:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct termios[m[K’ has no member named ‘[01m[Kc_flag[m[K’; did you mean ‘[01m[Kc_iflag[m[K’?
+  103 |     tty.[01;31m[Kc_flag[m[K &= ~CSIZE;
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Kc_iflag[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:104:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct termios[m[K’ has no member named ‘[01m[Kc_flag[m[K’; did you mean ‘[01m[Kc_iflag[m[K’?
+  104 |     tty.[01;31m[Kc_flag[m[K |= CS8;
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Kc_iflag[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct termios[m[K’ has no member named ‘[01m[Kc_flag[m[K’; did you mean ‘[01m[Kc_iflag[m[K’?
+  105 |     tty.[01;31m[Kc_flag[m[K &= ~CRTSCTS;
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Kc_iflag[m[K
+gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

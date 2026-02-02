@@ -1,0 +1,1293 @@
+[0.062s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.303s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[2.751s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[2.758s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:288:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.759s]   288 |         TSS_EXPORT TSS_ERROR tss_initAPI([01;35m[K)[m[K;
+[2.759s]       |                                          [01;35m[K^[m[K
+[2.760s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:294:44:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.760s]   294 |         TSS_EXPORT TSS_ERROR tss_deinitAPI([01;35m[K)[m[K;
+[2.761s]       |                                            [01;35m[K^[m[K
+[2.761s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:308:91:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.762s]   308 | nsor(const char* port_name, tss_device_id* out_id[01;35m[K)[m[K;
+[2.762s]       |                                                  [01;35m[K^[m[K
+[2.763s] 
+[2.763s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:315:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.763s]   315 | SS_ERROR tss_removeSensor(tss_device_id sensor_id[01;35m[K)[m[K;
+[2.766s]       |                                                  [01;35m[K^[m[K
+[2.769s] 
+[2.772s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:325:96:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.773s]   325 | loader(tss_device_id sensor_id, U8* in_bootloader[01;35m[K)[m[K;
+[2.773s]       |                                                  [01;35m[K^[m[K
+[2.775s] 
+[2.777s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:333:116:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.779s]   333 | _id sensor_id, U32* serial_number, U32* timestamp[01;35m[K)[m[K;
+[2.781s]       |                                                  [01;35m[K^[m[K
+[2.783s] 
+[2.785s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:341:114:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.787s]   341 | (tss_device_id sensor_id, char* hw_version_string[01;35m[K)[m[K;
+[2.789s]       |                                                  [01;35m[K^[m[K
+[2.789s] 
+[2.790s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:349:114:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.790s]   349 | (tss_device_id sensor_id, char* fw_version_string[01;35m[K)[m[K;
+[2.791s]       |                                                  [01;35m[K^[m[K
+[2.791s] 
+[2.791s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:358:92:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.791s]   358 | Wireless(tss_device_id sensor_id, U8* is_wireless[01;35m[K)[m[K;
+[2.792s]       |                                                  [01;35m[K^[m[K
+[2.792s] 
+[2.793s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:365:76:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.793s]   365 | OR tss_sensor_isConnected(tss_device_id sensor_id[01;35m[K)[m[K;
+[2.793s]       |                                                  [01;35m[K^[m[K
+[2.794s] 
+[2.794s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:373:103:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.795s]   373 | Timestamp(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[2.795s]       |                                                  [01;35m[K^[m[K
+[2.795s] 
+[2.796s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:381:101:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.796s]   381 | mestamp(tss_device_id sensor_id, float* timestamp[01;35m[K)[m[K;
+[2.797s]       |                                                  [01;35m[K^[m[K
+[2.797s] 
+[2.797s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:389:92:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.798s]   389 | sorType(tss_device_id sensor_id, U16* sensor_type[01;35m[K)[m[K;
+[2.798s]       |                                                  [01;35m[K^[m[K
+[2.799s] 
+[2.799s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:399:96:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.799s]   399 | rt(tss_device_id sensor_id, const char* port_name[01;35m[K)[m[K;
+[2.800s]       |                                                  [01;35m[K^[m[K
+[2.800s] 
+[2.801s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:406:70:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.801s]   406 | RROR tss_sensor_closePort(tss_device_id sensor_id[01;35m[K)[m[K;
+[2.801s]       |                                                  [01;35m[K^[m[K
+[2.802s] 
+[2.802s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:415:82:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.803s]   415 | sor_enableTimestampsWired(tss_device_id sensor_id[01;35m[K)[m[K;
+[2.803s]       |                                                  [01;35m[K^[m[K
+[2.803s] 
+[2.804s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:422:83:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.804s]   422 | or_disableTimestampsWired(tss_device_id sensor_id[01;35m[K)[m[K;
+[2.804s]       |                                                  [01;35m[K^[m[K
+[2.805s] 
+[2.805s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:437:139:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.806s]   437 | data_flags, U32 interval, U32 duration, U32 delay[01;35m[K)[m[K;
+[2.806s]       |                                                  [01;35m[K^[m[K
+[2.806s] 
+[2.807s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:444:85:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.807s]   444 | _disableStreamingWireless(tss_device_id sensor_id[01;35m[K)[m[K;
+[2.807s]       |                                                  [01;35m[K^[m[K
+[2.808s] 
+[2.808s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:457:137:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.809s]   457 | ta_flags, U32 interval, U32 duration, U32 delay=0[01;35m[K)[m[K;
+[2.809s]       |                                                  [01;35m[K^[m[K
+[2.810s] 
+[2.810s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:465:125:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.811s]   465 | ensor_id, struct TSS_Stream_Packet* stream_packet[01;35m[K)[m[K;
+[2.811s]       |                                                  [01;35m[K^[m[K
+[2.811s] 
+[2.812s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:473:124:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.812s]   473 | ensor_id, struct TSS_Stream_Packet* stream_packet[01;35m[K)[m[K;
+[2.813s]       |                                                  [01;35m[K^[m[K
+[2.813s] 
+[2.814s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:480:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.814s]   480 | sensor_stopStreamingWired(tss_device_id sensor_id[01;35m[K)[m[K;
+[2.814s]       |                                                  [01;35m[K^[m[K
+[2.815s] 
+[2.815s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:488:106:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.816s]   488 | nWaiting(tss_device_id sensor_id, U32* in_waiting[01;35m[K)[m[K;
+[2.816s]       |                                                  [01;35m[K^[m[K
+[2.816s] 
+[2.817s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:496:95:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.817s]   496 | ingOverflow(tss_device_id sensor_id, U8* overflow[01;35m[K)[m[K;
+[2.818s]       |                                                  [01;35m[K^[m[K
+[2.818s] 
+[2.819s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:514:186:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.820s]   514 | , U8* slot6, U8* slot7, U8* slot8, U32* timestamp[01;35m[K)[m[K;
+[2.820s]       |                                                  [01;35m[K^[m[K
+[2.821s] 
+[2.821s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:532:178:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.822s]   532 | ot5, U8 slot6, U8 slot7, U8 slot8, U32* timestamp[01;35m[K)[m[K;
+[2.822s]       |                                                  [01;35m[K^[m[K
+[2.823s] 
+[2.823s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:543:141:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.823s]   543 | terval, U32* duration, U32* delay, U32* timestamp[01;35m[K)[m[K;
+[2.824s]       |                                                  [01;35m[K^[m[K
+[2.824s] 
+[2.825s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:554:138:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.825s]   554 | interval, U32 duration, U32 delay, U32* timestamp[01;35m[K)[m[K;
+[2.826s]       |                                                  [01;35m[K^[m[K
+[2.826s] 
+[2.826s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:563:126:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.827s]   563 | evice_id sensor_id, U32* bitfield, U32* timestamp[01;35m[K)[m[K;
+[2.827s]       |                                                  [01;35m[K^[m[K
+[2.828s] 
+[2.828s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:572:125:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.829s]   572 | device_id sensor_id, U32 bitfield, U32* timestamp[01;35m[K)[m[K;
+[2.830s]       |                                                  [01;35m[K^[m[K
+[2.831s] 
+[2.831s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:582:94:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.832s]   582 | ommandRetries(tss_device_id sensor_id, U8 retries[01;35m[K)[m[K;
+[2.832s]       |                                                  [01;35m[K^[m[K
+[2.833s] 
+[2.833s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:591:128:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.834s]   591 | _id sensor_id, float* orient_quat, U32* timestamp[01;35m[K)[m[K;
+[2.834s]       |                                                  [01;35m[K^[m[K
+[2.835s] 
+[2.835s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:600:123:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.836s]   600 | device_id sensor_id, float* euler, U32* timestamp[01;35m[K)[m[K;
+[2.836s]       |                                                  [01;35m[K^[m[K
+[2.837s] 
+[2.837s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:609:124:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.838s]   609 | s_device_id sensor_id, float* mat, U32* timestamp[01;35m[K)[m[K;
+[2.838s]       |                                                  [01;35m[K^[m[K
+[2.839s] 
+[2.839s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:619:133:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.839s]   619 | nsor_id, float* vec, float* angle, U32* timestamp[01;35m[K)[m[K;
+[2.840s]       |                                                  [01;35m[K^[m[K
+[2.841s] 
+[2.842s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:629:136:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.842s]   629 | r_id, float* forward, float* down, U32* timestamp[01;35m[K)[m[K;
+[2.843s]       |                                                  [01;35m[K^[m[K
+[2.844s] 
+[2.844s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:638:130:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.845s]   638 | _id sensor_id, float* orient_quat, U32* timestamp[01;35m[K)[m[K;
+[2.855s]       |                                                  [01;35m[K^[m[K
+[2.856s] 
+[2.856s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:647:125:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.857s]   647 | device_id sensor_id, float* euler, U32* timestamp[01;35m[K)[m[K;
+[2.857s]       |                                                  [01;35m[K^[m[K
+[2.858s] 
+[2.858s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:656:126:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.859s]   656 | s_device_id sensor_id, float* mat, U32* timestamp[01;35m[K)[m[K;
+[2.859s]       |                                                  [01;35m[K^[m[K
+[2.860s] 
+[2.860s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:666:135:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.861s]   666 | nsor_id, float* vec, float* angle, U32* timestamp[01;35m[K)[m[K;
+[2.862s]       |                                                  [01;35m[K^[m[K
+[2.862s] 
+[2.863s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:676:139:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.864s]   676 | _id, float* north, float* gravity, U32* timestamp[01;35m[K)[m[K;
+[2.864s]       |                                                  [01;35m[K^[m[K
+[2.865s] 
+[2.865s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:684:103:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.866s]   684 | ientation(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[2.866s]       |                                                  [01;35m[K^[m[K
+[2.867s] 
+[2.868s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:693:108:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.868s]   693 | _device_id sensor_id, U8* channel, U32* timestamp[01;35m[K)[m[K;
+[2.869s]       |                                                  [01;35m[K^[m[K
+[2.869s] 
+[2.870s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:702:107:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.870s]   702 | s_device_id sensor_id, U8 channel, U32* timestamp[01;35m[K)[m[K;
+[2.871s]       |                                                  [01;35m[K^[m[K
+[2.871s] 
+[2.872s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:711:106:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.872s]   711 | _device_id sensor_id, U16* pan_id, U32* timestamp[01;35m[K)[m[K;
+[2.873s]       |                                                  [01;35m[K^[m[K
+[2.873s] 
+[2.874s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:720:105:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.874s]   720 | s_device_id sensor_id, U16 pan_id, U32* timestamp[01;35m[K)[m[K;
+[2.874s]       |                                                  [01;35m[K^[m[K
+[2.875s] 
+[2.875s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:728:91:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.876s]   728 | tSettings(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[2.876s]       |                                                  [01;35m[K^[m[K
+[2.877s] 
+[2.877s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:736:99:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.878s]   736 | sSettings(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[2.878s]       |                                                  [01;35m[K^[m[K
+[2.879s] 
+[2.879s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[2.879s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:747:168:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.880s]   747 | elerometer3, float* magnetometer3, U32* timestamp[01;35m[K)[m[K;
+[2.880s]       |                                                  [01;35m[K^[m[K
+[2.881s] 
+[2.881s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:756:122:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.882s]   756 | e_id sensor_id, float* gyroscope3, U32* timestamp[01;35m[K)[m[K;
+[2.882s]       |                                                  [01;35m[K^[m[K
+[2.882s] 
+[2.883s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:765:130:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.883s]   765 |  sensor_id, float* accelerometer3, U32* timestamp[01;35m[K)[m[K;
+[2.884s]       |                                                  [01;35m[K^[m[K
+[2.884s] 
+[2.885s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:774:128:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.885s]   774 | d sensor_id, float* magnetometer3, U32* timestamp[01;35m[K)[m[K;
+[2.886s]       |                                                  [01;35m[K^[m[K
+[2.886s] 
+[2.887s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:785:167:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.887s]   785 | elerometer3, float* magnetometer3, U32* timestamp[01;35m[K)[m[K;
+[2.887s]       |                                                  [01;35m[K^[m[K
+[2.888s] 
+[2.888s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:794:121:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.889s]   794 | e_id sensor_id, float* gyroscope3, U32* timestamp[01;35m[K)[m[K;
+[2.889s]       |                                                  [01;35m[K^[m[K
+[2.889s] 
+[2.890s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:803:129:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.890s]   803 |  sensor_id, float* accelerometer3, U32* timestamp[01;35m[K)[m[K;
+[2.891s]       |                                                  [01;35m[K^[m[K
+[2.891s] 
+[2.892s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:812:127:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.892s]   812 | d sensor_id, float* magnetometer3, U32* timestamp[01;35m[K)[m[K;
+[2.892s]       |                                                  [01;35m[K^[m[K
+[2.893s] 
+[2.893s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:821:147:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.894s]   821 |  sensor_id, float* accelerometer3, U32* timestamp[01;35m[K)[m[K;
+[2.894s]       |                                                  [01;35m[K^[m[K
+[2.894s] 
+[2.895s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:832:170:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.895s]   832 | elerometer3, float* magnetometer3, U32* timestamp[01;35m[K)[m[K;
+[2.896s]       |                                                  [01;35m[K^[m[K
+[2.896s] 
+[2.896s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:841:115:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.897s]   841 | e_id sensor_id, float* gyroscope3, U32* timestamp[01;35m[K)[m[K;
+[2.897s]       |                                                  [01;35m[K^[m[K
+[2.898s] 
+[2.898s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:850:123:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.899s]   850 |  sensor_id, float* accelerometer3, U32* timestamp[01;35m[K)[m[K;
+[2.899s]       |                                                  [01;35m[K^[m[K
+[2.900s] 
+[2.900s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:859:121:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.901s]   859 | d sensor_id, float* magnetometer3, U32* timestamp[01;35m[K)[m[K;
+[2.901s]       |                                                  [01;35m[K^[m[K
+[2.902s] 
+[2.902s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:868:109:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.903s]   868 | _device_id sensor_id, float* temp, U32* timestamp[01;35m[K)[m[K;
+[2.903s]       |                                                  [01;35m[K^[m[K
+[2.904s] 
+[2.904s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:877:109:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.904s]   877 | _device_id sensor_id, float* temp, U32* timestamp[01;35m[K)[m[K;
+[2.905s]       |                                                  [01;35m[K^[m[K
+[2.905s] 
+[2.906s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:886:120:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.906s]   886 | _id sensor_id, float* confindence, U32* timestamp[01;35m[K)[m[K;
+[2.906s]       |                                                  [01;35m[K^[m[K
+[2.907s] 
+[2.907s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:896:98:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.908s]   896 | ssStorage(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[2.908s]       |                                                  [01;35m[K^[m[K
+[2.908s] 
+[2.909s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:904:99:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.909s]   904 | ssStorage(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[2.910s]       |                                                  [01;35m[K^[m[K
+[2.910s] 
+[2.911s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:912:106:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.911s]   912 | izeSDCard(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[2.911s]       |                                                  [01;35m[K^[m[K
+[2.912s] 
+[2.912s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:920:104:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.912s]   920 | ngSession(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[2.913s]       |                                                  [01;35m[K^[m[K
+[2.913s] 
+[2.914s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:928:102:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.915s]   928 | ngSession(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[2.916s]       |                                                  [01;35m[K^[m[K
+[2.917s] 
+[2.918s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:942:153:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.919s]   942 | ar, U8 hour, U8 minute, U8 second, U32* timestamp[01;35m[K)[m[K;
+[2.920s]       |                                                  [01;35m[K^[m[K
+[2.921s] 
+[2.922s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:956:159:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.923s]   956 |  U8* hour, U8* minute, U8* second, U32* timestamp[01;35m[K)[m[K;
+[2.923s]       |                                                  [01;35m[K^[m[K
+[2.924s] 
+[2.925s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:965:122:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.925s]   965 | e_id sensor_id, U32 set_timestamp, U32* timestamp[01;35m[K)[m[K;
+[2.926s]       |                                                  [01;35m[K^[m[K
+[2.927s] 
+[2.927s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:976:122:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.927s]   976 | tss_device_id sensor_id, U8 order, U32* timestamp[01;35m[K)[m[K;
+[2.928s]       |                                                  [01;35m[K^[m[K
+[2.928s] 
+[2.929s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[2.929s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:988:201:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.930s]   988 | loat perturbation_detection_value, U32* timestamp[01;35m[K)[m[K;
+[2.930s]       |                                                  [01;35m[K^[m[K
+[2.930s] 
+[2.931s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[2.931s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:998:153:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.932s]   998 | oat threshold, U32 lockout_frames, U32* timestamp[01;35m[K)[m[K;
+[2.932s]       |                                                  [01;35m[K^[m[K
+[2.932s] 
+[2.933s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1006:109:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.933s]  1006 | ientation(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[2.934s]       |                                                  [01;35m[K^[m[K
+[2.934s] 
+[2.935s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1014:96:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.935s]  1014 | aseOffset(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[2.936s]       |                                                  [01;35m[K^[m[K
+[2.936s] 
+[2.936s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1023:121:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.937s]  1023 | _id sensor_id, const float* quat4, U32* timestamp[01;35m[K)[m[K;
+[2.937s]       |                                                  [01;35m[K^[m[K
+[2.938s] 
+[2.938s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1032:119:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.938s]  1032 | _id sensor_id, const float* quat4, U32* timestamp[01;35m[K)[m[K;
+[2.939s]       |                                                  [01;35m[K^[m[K
+[2.939s] 
+[2.940s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1041:125:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.940s]  1041 | d sensor_id, const float* matrix9, U32* timestamp[01;35m[K)[m[K;
+[2.940s]       |                                                  [01;35m[K^[m[K
+[2.941s] 
+[2.941s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1050:132:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.942s]  1050 | e_id sensor_id, float trust_value, U32* timestamp[01;35m[K)[m[K;
+[2.942s]       |                                                  [01;35m[K^[m[K
+[2.943s] 
+[2.943s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1060:164:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.944s]  1060 | rust_value, float max_trust_value, U32* timestamp[01;35m[K)[m[K;
+[2.944s]       |                                                  [01;35m[K^[m[K
+[2.944s] 
+[2.945s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1069:126:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.945s]  1069 | e_id sensor_id, float trust_value, U32* timestamp[01;35m[K)[m[K;
+[2.946s]       |                                                  [01;35m[K^[m[K
+[2.946s] 
+[2.946s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1079:158:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.947s]  1079 | rust_value, float max_trust_value, U32* timestamp[01;35m[K)[m[K;
+[2.947s]       |                                                  [01;35m[K^[m[K
+[2.947s] 
+[2.948s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1088:118:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.948s]  1088 | ice_id sensor_id, U32 update_rate, U32* timestamp[01;35m[K)[m[K;
+[2.948s]       |                                                  [01;35m[K^[m[K
+[2.949s] 
+[2.949s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[2.949s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1097:112:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.950s]  1097 | (tss_device_id sensor_id, U8 mode, U32* timestamp[01;35m[K)[m[K;
+[2.951s]       |                                                  [01;35m[K^[m[K
+[2.952s] 
+[2.952s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[2.953s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1108:168:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.953s]  1108 | ple_rate, U16 compass_sample_rate, U32* timestamp[01;35m[K)[m[K;
+[2.954s]       |                                                  [01;35m[K^[m[K
+[2.955s] 
+[2.956s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1117:112:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.956s]  1117 | s_device_id sensor_id, U8 enabled, U32* timestamp[01;35m[K)[m[K;
+[2.957s]       |                                                  [01;35m[K^[m[K
+[2.957s] 
+[2.958s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1126:116:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.958s]  1126 | s_device_id sensor_id, U8 enabled, U32* timestamp[01;35m[K)[m[K;
+[2.959s]       |                                                  [01;35m[K^[m[K
+[2.959s] 
+[2.959s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1135:110:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.960s]  1135 | s_device_id sensor_id, U8 enabled, U32* timestamp[01;35m[K)[m[K;
+[2.960s]       |                                                  [01;35m[K^[m[K
+[2.961s] 
+[2.961s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1150:318:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.962s]  1150 | ification, float smoothing_offset, U32* timestamp[01;35m[K)[m[K;
+[2.962s]       |                                                  [01;35m[K^[m[K
+[2.963s] 
+[2.963s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1165:322:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.963s]  1165 | fication, float* smoothing_offset, U32* timestamp[01;35m[K)[m[K;
+[2.964s]       |                                                  [01;35m[K^[m[K
+[2.964s] 
+[2.964s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[2.965s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1174:122:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.965s]  1174 | sensor_id, U8 axis_direction_byte, U32* timestamp[01;35m[K)[m[K;
+[2.966s]       |                                                  [01;35m[K^[m[K
+[2.966s] 
+[2.967s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[2.968s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1186:251:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.968s]  1186 | at orient_running_average_percent, U32* timestamp[01;35m[K)[m[K;
+[2.968s]       |                                                  [01;35m[K^[m[K
+[2.969s] 
+[2.969s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1195:138:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.970s]  1195 | d, const float* reference_vector3, U32* timestamp[01;35m[K)[m[K;
+[2.970s]       |                                                  [01;35m[K^[m[K
+[2.970s] 
+[2.971s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1204:144:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.971s]  1204 | d, const float* reference_vector3, U32* timestamp[01;35m[K)[m[K;
+[2.972s]       |                                                  [01;35m[K^[m[K
+[2.972s] 
+[2.973s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1212:98:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.973s]  1212 | manFilter(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[2.973s]       |                                                  [01;35m[K^[m[K
+[2.974s] 
+[2.974s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1221:134:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.975s]  1221 | d, U8 accelerometer_range_setting, U32* timestamp[01;35m[K)[m[K;
+[2.975s]       |                                                  [01;35m[K^[m[K
+[2.976s] 
+[2.976s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[2.977s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1230:103:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.977s]  1230 | (tss_device_id sensor_id, U8 mode, U32* timestamp[01;35m[K)[m[K;
+[2.977s]       |                                                  [01;35m[K^[m[K
+[2.978s] 
+[2.978s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[2.979s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1239:111:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.979s]  1239 | (tss_device_id sensor_id, U8 mode, U32* timestamp[01;35m[K)[m[K;
+[2.979s]       |                                                  [01;35m[K^[m[K
+[2.979s] 
+[2.980s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1248:126:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.980s]  1248 | or_id, U8 gyroscope_range_setting, U32* timestamp[01;35m[K)[m[K;
+[2.980s]       |                                                  [01;35m[K^[m[K
+[2.981s] 
+[2.981s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1257:122:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.981s]  1257 | nsor_id, U8 compass_range_setting, U32* timestamp[01;35m[K)[m[K;
+[2.981s]       |                                                  [01;35m[K^[m[K
+[2.982s] 
+[2.982s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1268:114:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.982s]  1268 | device_id sensor_id, float* quat4, U32* timestamp[01;35m[K)[m[K;
+[2.983s]       |                                                  [01;35m[K^[m[K
+[2.983s] 
+[2.983s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1277:120:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.983s]  1277 | vice_id sensor_id, float* matrix9, U32* timestamp[01;35m[K)[m[K;
+[2.984s]       |                                                  [01;35m[K^[m[K
+[2.984s] 
+[2.984s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1287:156:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.984s]  1287 | ust_value, float* max_trust_value, U32* timestamp[01;35m[K)[m[K;
+[2.985s]       |                                                  [01;35m[K^[m[K
+[2.985s] 
+[2.985s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1297:150:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.986s]  1297 | ust_value, float* max_trust_value, U32* timestamp[01;35m[K)[m[K;
+[2.986s]       |                                                  [01;35m[K^[m[K
+[2.986s] 
+[2.987s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1306:119:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.987s]  1306 | ce_id sensor_id, U32* last_update, U32* timestamp[01;35m[K)[m[K;
+[2.987s]       |                                                  [01;35m[K^[m[K
+[2.987s] 
+[2.988s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1315:131:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.988s]  1315 | ensor_id, float* reference_vector, U32* timestamp[01;35m[K)[m[K;
+[2.988s]       |                                                  [01;35m[K^[m[K
+[2.988s] 
+[2.989s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1324:137:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.989s]  1324 | ensor_id, float* reference_vector, U32* timestamp[01;35m[K)[m[K;
+[2.990s]       |                                                  [01;35m[K^[m[K
+[2.990s] 
+[2.990s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1333:113:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.991s]  1333 | tss_device_id sensor_id, U8* mode, U32* timestamp[01;35m[K)[m[K;
+[2.991s]       |                                                  [01;35m[K^[m[K
+[2.992s] 
+[2.992s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1342:118:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.993s]  1342 | _device_id sensor_id, U8* enabled, U32* timestamp[01;35m[K)[m[K;
+[2.993s]       |                                                  [01;35m[K^[m[K
+[2.994s] 
+[2.994s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1351:122:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.995s]  1351 | _device_id sensor_id, U8* enabled, U32* timestamp[01;35m[K)[m[K;
+[2.996s]       |                                                  [01;35m[K^[m[K
+[2.996s] 
+[2.996s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1360:116:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.997s]  1360 | _device_id sensor_id, U8* enabled, U32* timestamp[01;35m[K)[m[K;
+[2.998s]       |                                                  [01;35m[K^[m[K
+[2.998s] 
+[2.998s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1369:119:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[2.999s]  1369 | id sensor_id, U8* axis_directions, U32* timestamp[01;35m[K)[m[K;
+[2.999s]       |                                                  [01;35m[K^[m[K
+[3.000s] 
+[3.000s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1380:171:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.000s]  1380 | le_rate, U16* compass_sample_rate, U32* timestamp[01;35m[K)[m[K;
+[3.001s]       |                                                  [01;35m[K^[m[K
+[3.001s] 
+[3.001s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1392:255:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.002s]  1392 | t* orient_running_average_percent, U32* timestamp[01;35m[K)[m[K;
+[3.002s]       |                                                  [01;35m[K^[m[K
+[3.003s] 
+[3.003s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1401:119:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.004s]  1401 | ce_id sensor_id, U32* update_rate, U32* timestamp[01;35m[K)[m[K;
+[3.004s]       |                                                  [01;35m[K^[m[K
+[3.005s] 
+[3.005s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1410:135:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.005s]  1410 | , U8* accelerometer_range_setting, U32* timestamp[01;35m[K)[m[K;
+[3.006s]       |                                                  [01;35m[K^[m[K
+[3.006s] 
+[3.007s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1419:104:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.007s]  1419 | tss_device_id sensor_id, U8* mode, U32* timestamp[01;35m[K)[m[K;
+[3.008s]       |                                                  [01;35m[K^[m[K
+[3.008s] 
+[3.008s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1428:112:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.009s]  1428 | tss_device_id sensor_id, U8* mode, U32* timestamp[01;35m[K)[m[K;
+[3.009s]       |                                                  [01;35m[K^[m[K
+[3.010s] 
+[3.010s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1437:127:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.010s]  1437 | r_id, U8* gyroscope_range_setting, U32* timestamp[01;35m[K)[m[K;
+[3.011s]       |                                                  [01;35m[K^[m[K
+[3.011s] 
+[3.012s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1446:123:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.012s]  1446 | sor_id, U8* compass_range_setting, U32* timestamp[01;35m[K)[m[K;
+[3.012s]       |                                                  [01;35m[K^[m[K
+[3.013s] 
+[3.013s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1455:123:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.014s]  1455 | ss_device_id sensor_id, U8* order, U32* timestamp[01;35m[K)[m[K;
+[3.014s]       |                                                  [01;35m[K^[m[K
+[3.014s] 
+[3.015s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1467:205:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.015s]  1467 | oat* perturbation_detection_value, U32* timestamp[01;35m[K)[m[K;
+[3.016s]       |                                                  [01;35m[K^[m[K
+[3.016s] 
+[3.016s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1477:155:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.017s]  1477 | t* threshold, U32* lockout_frames, U32* timestamp[01;35m[K)[m[K;
+[3.017s]       |                                                  [01;35m[K^[m[K
+[3.018s] 
+[3.018s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1486:127:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.018s]  1486 | device_id sensor_id, float* quat4, U32* timestamp[01;35m[K)[m[K;
+[3.019s]       |                                                  [01;35m[K^[m[K
+[3.019s] 
+[3.020s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1498:144:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.021s]  1498 | _id, float* matrix9, float* bias3, U32* timestamp[01;35m[K)[m[K;
+[3.022s]       |                                                  [01;35m[K^[m[K
+[3.022s] 
+[3.022s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1508:162:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.023s]  1508 | loat* matrix9, const float* bias3, U32* timestamp[01;35m[K)[m[K;
+[3.023s]       |                                                  [01;35m[K^[m[K
+[3.024s] 
+[3.024s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1518:144:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.024s]  1518 | _id, float* matrix9, float* bias3, U32* timestamp[01;35m[K)[m[K;
+[3.025s]       |                                                  [01;35m[K^[m[K
+[3.025s] 
+[3.026s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1528:150:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.026s]  1528 | _id, float* matrix9, float* bias3, U32* timestamp[01;35m[K)[m[K;
+[3.027s]       |                                                  [01;35m[K^[m[K
+[3.027s] 
+[3.028s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1538:146:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.028s]  1538 | _id, float* matrix9, float* bias3, U32* timestamp[01;35m[K)[m[K;
+[3.029s]       |                                                  [01;35m[K^[m[K
+[3.029s] 
+[3.030s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1546:110:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.030s]  1546 | libration(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[3.031s]       |                                                  [01;35m[K^[m[K
+[3.031s] 
+[3.032s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1556:158:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.032s]  1556 | loat* matrix9, const float* bias3, U32* timestamp[01;35m[K)[m[K;
+[3.032s]       |                                                  [01;35m[K^[m[K
+[3.033s] 
+[3.033s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1565:108:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.034s]  1565 | (tss_device_id sensor_id, U8 mode, U32* timestamp[01;35m[K)[m[K;
+[3.034s]       |                                                  [01;35m[K^[m[K
+[3.034s] 
+[3.035s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1574:109:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.036s]  1574 | tss_device_id sensor_id, U8* mode, U32* timestamp[01;35m[K)[m[K;
+[3.036s]       |                                                  [01;35m[K^[m[K
+[3.036s] 
+[3.037s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1583:119:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.037s]  1583 | (tss_device_id sensor_id, U8 mode, U32* timestamp[01;35m[K)[m[K;
+[3.038s]       |                                                  [01;35m[K^[m[K
+[3.038s] 
+[3.039s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1592:120:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.039s]  1592 | tss_device_id sensor_id, U8* mode, U32* timestamp[01;35m[K)[m[K;
+[3.040s]       |                                                  [01;35m[K^[m[K
+[3.040s] 
+[3.041s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1605:238:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.041s]  1605 | x_averages, U8 max_bad_deviations, U32* timestamp[01;35m[K)[m[K;
+[3.042s]       |                                                  [01;35m[K^[m[K
+[3.042s] 
+[3.042s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1618:243:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.043s]  1618 | _averages, U8* max_bad_deviations, U32* timestamp[01;35m[K)[m[K;
+[3.043s]       |                                                  [01;35m[K^[m[K
+[3.044s] 
+[3.044s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1627:122:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.044s]  1627 | ss_device_id sensor_id, U8* count, U32* timestamp[01;35m[K)[m[K;
+[3.045s]       |                                                  [01;35m[K^[m[K
+[3.045s] 
+[3.046s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1635:113:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.046s]  1635 | device_id sensor_id, U16* address, U32* timestamp[01;35m[K)[m[K;
+[3.047s]       |                                                  [01;35m[K^[m[K
+[3.048s] 
+[3.048s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1646:122:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.049s]  1646 | sensor_id, float* battery_voltage, U32* timestamp[01;35m[K)[m[K;
+[3.050s]       |                                                  [01;35m[K^[m[K
+[3.050s] 
+[3.052s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1655:128:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.053s]  1655 | id sensor_id, U8* battery_percent, U32* timestamp[01;35m[K)[m[K;
+[3.054s]       |                                                  [01;35m[K^[m[K
+[3.054s] 
+[3.054s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1664:124:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.055s]  1664 | sor_id, U8* battery_charge_status, U32* timestamp[01;35m[K)[m[K;
+[3.055s]       |                                                  [01;35m[K^[m[K
+[3.056s] 
+[3.056s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1675:100:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.056s]  1675 | (tss_device_id sensor_id, U8 mode, U32* timestamp[01;35m[K)[m[K;
+[3.057s]       |                                                  [01;35m[K^[m[K
+[3.057s] 
+[3.058s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1684:101:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.058s]  1684 | tss_device_id sensor_id, U8* mode, U32* timestamp[01;35m[K)[m[K;
+[3.059s]       |                                                  [01;35m[K^[m[K
+[3.059s] 
+[3.060s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1692:103:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.060s]  1692 | ySettings(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[3.060s]       |                                                  [01;35m[K^[m[K
+[3.061s] 
+[3.061s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1699:78:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.062s]  1699 |  tss_sensor_softwareReset(tss_device_id sensor_id[01;35m[K)[m[K;
+[3.062s]       |                                                  [01;35m[K^[m[K
+[3.063s] 
+[3.063s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1708:102:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.064s]  1708 | (tss_device_id sensor_id, U8 mode, U32* timestamp[01;35m[K)[m[K;
+[3.064s]       |                                                  [01;35m[K^[m[K
+[3.065s] 
+[3.065s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1717:103:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.066s]  1717 | tss_device_id sensor_id, U8* mode, U32* timestamp[01;35m[K)[m[K;
+[3.067s]       |                                                  [01;35m[K^[m[K
+[3.067s] 
+[3.068s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1725:100:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.069s]  1725 | oaderMode(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[3.069s]       |                                                  [01;35m[K^[m[K
+[3.070s] 
+[3.070s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1734:111:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.071s]  1734 | evice_id sensor_id, U32 baud_rate, U32* timestamp[01;35m[K)[m[K;
+[3.071s]       |                                                  [01;35m[K^[m[K
+[3.072s] 
+[3.072s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1743:112:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.073s]  1743 | vice_id sensor_id, U32* baud_rate, U32* timestamp[01;35m[K)[m[K;
+[3.073s]       |                                                  [01;35m[K^[m[K
+[3.073s] 
+[3.074s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1752:100:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.074s]  1752 | (tss_device_id sensor_id, U8 mode, U32* timestamp[01;35m[K)[m[K;
+[3.075s]       |                                                  [01;35m[K^[m[K
+[3.075s] 
+[3.075s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1761:101:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.076s]  1761 | tss_device_id sensor_id, U8* mode, U32* timestamp[01;35m[K)[m[K;
+[3.076s]       |                                                  [01;35m[K^[m[K
+[3.077s] 
+[3.077s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1770:117:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.077s]  1770 | ensor_id, const float* rgb_color3, U32* timestamp[01;35m[K)[m[K;
+[3.078s]       |                                                  [01;35m[K^[m[K
+[3.078s] 
+[3.079s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1779:111:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.080s]  1779 | e_id sensor_id, float* rgb_color3, U32* timestamp[01;35m[K)[m[K;
+[3.080s]       |                                                  [01;35m[K^[m[K
+[3.081s] 
+[3.081s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1790:117:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.082s]  1790 | ce_id sensor_id, U8 enabled_state, U32* timestamp[01;35m[K)[m[K;
+[3.082s]       |                                                  [01;35m[K^[m[K
+[3.083s] 
+[3.083s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1799:114:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.084s]  1799 | ce_id sensor_id, U8 enabled_state, U32* timestamp[01;35m[K)[m[K;
+[3.084s]       |                                                  [01;35m[K^[m[K
+[3.085s] 
+[3.085s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1808:118:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.086s]  1808 | e_id sensor_id, U8* enabled_state, U32* timestamp[01;35m[K)[m[K;
+[3.086s]       |                                                  [01;35m[K^[m[K
+[3.087s] 
+[3.087s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1817:115:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.088s]  1817 | e_id sensor_id, U8* enabled_state, U32* timestamp[01;35m[K)[m[K;
+[3.088s]       |                                                  [01;35m[K^[m[K
+[3.089s] 
+[3.089s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[3.090s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1830:149:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.090s]  1830 | 8 control_index, U8 handler_index, U32* timestamp[01;35m[K)[m[K;
+[3.091s]       |                                                  [01;35m[K^[m[K
+[3.091s] 
+[3.092s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[3.092s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1842:170:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.093s]  1842 | ata_point_index, float data_point, U32* timestamp[01;35m[K)[m[K;
+[3.093s]       |                                                  [01;35m[K^[m[K
+[3.094s] 
+[3.094s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1853:150:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.095s]  1853 |  control_index, U8* handler_index, U32* timestamp[01;35m[K)[m[K;
+[3.095s]       |                                                  [01;35m[K^[m[K
+[3.096s] 
+[3.096s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1865:171:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.096s]  1865 | ta_point_index, float* data_point, U32* timestamp[01;35m[K)[m[K;
+[3.097s]       |                                                  [01;35m[K^[m[K
+[3.097s] 
+[3.097s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1874:128:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.098s]  1874 | id sensor_id, U8 number_of_frames, U32* timestamp[01;35m[K)[m[K;
+[3.098s]       |                                                  [01;35m[K^[m[K
+[3.099s] 
+[3.099s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1883:129:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.100s]  1883 | d sensor_id, U8* number_of_frames, U32* timestamp[01;35m[K)[m[K;
+[3.100s]       |                                                  [01;35m[K^[m[K
+[3.101s] 
+[3.101s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1892:113:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.102s]  1892 | ce_id sensor_id, U8* button_state, U32* timestamp[01;35m[K)[m[K;
+[3.102s]       |                                                  [01;35m[K^[m[K
+[3.103s] 
+[3.103s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1901:118:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.104s]  1901 | (tss_device_id sensor_id, U8 mode, U32* timestamp[01;35m[K)[m[K;
+[3.104s]       |                                                  [01;35m[K^[m[K
+[3.105s] 
+[3.105s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1910:119:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.106s]  1910 | tss_device_id sensor_id, U8* mode, U32* timestamp[01;35m[K)[m[K;
+[3.106s]       |                                                  [01;35m[K^[m[K
+[3.107s] 
+[3.107s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1920:137:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.108s]  1920 |  sensor_id, U8 joystick, U8 mouse, U32* timestamp[01;35m[K)[m[K;
+[3.108s]       |                                                  [01;35m[K^[m[K
+[3.109s] 
+[3.109s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1930:139:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.110s]  1930 | ensor_id, U8* joystick, U8* mouse, U32* timestamp[01;35m[K)[m[K;
+[3.110s]       |                                                  [01;35m[K^[m[K
+[3.111s] 
+[3.111s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1940:105:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.112s]  1940 | nTracking(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[3.112s]       |                                                  [01;35m[K^[m[K
+[3.113s] 
+[3.113s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1948:106:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.114s]  1948 | nTracking(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[3.114s]       |                                                  [01;35m[K^[m[K
+[3.115s] 
+[3.115s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1957:127:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.116s]  1957 | _device_id sensor_id, U8* enabled, U32* timestamp[01;35m[K)[m[K;
+[3.116s]       |                                                  [01;35m[K^[m[K
+[3.116s] 
+[3.117s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1966:112:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.117s]  1966 | ss_device_id sensor_id, U16 index, U32* timestamp[01;35m[K)[m[K;
+[3.118s]       |                                                  [01;35m[K^[m[K
+[3.118s] 
+[3.119s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1975:113:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.119s]  1975 | s_device_id sensor_id, U16* index, U32* timestamp[01;35m[K)[m[K;
+[3.119s]       |                                                  [01;35m[K^[m[K
+[3.120s] 
+[3.121s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1984:117:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.121s]  1984 | ice_id sensor_id, float min_ratio, U32* timestamp[01;35m[K)[m[K;
+[3.122s]       |                                                  [01;35m[K^[m[K
+[3.122s] 
+[3.123s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:1993:118:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.123s]  1993 | ce_id sensor_id, float* min_ratio, U32* timestamp[01;35m[K)[m[K;
+[3.124s]       |                                                  [01;35m[K^[m[K
+[3.124s] 
+[3.125s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2002:117:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.125s]  2002 | ice_id sensor_id, float max_ratio, U32* timestamp[01;35m[K)[m[K;
+[3.126s]       |                                                  [01;35m[K^[m[K
+[3.126s] 
+[3.126s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2011:118:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.127s]  2011 | ce_id sensor_id, float* max_ratio, U32* timestamp[01;35m[K)[m[K;
+[3.127s]       |                                                  [01;35m[K^[m[K
+[3.128s] 
+[3.128s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2020:126:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.128s]  2020 | d sensor_id, float min_duty_cycle, U32* timestamp[01;35m[K)[m[K;
+[3.129s]       |                                                  [01;35m[K^[m[K
+[3.129s] 
+[3.130s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2029:127:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.130s]  2029 |  sensor_id, float* min_duty_cycle, U32* timestamp[01;35m[K)[m[K;
+[3.131s]       |                                                  [01;35m[K^[m[K
+[3.131s] 
+[3.132s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2038:126:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.132s]  2038 | d sensor_id, float max_duty_cycle, U32* timestamp[01;35m[K)[m[K;
+[3.132s]       |                                                  [01;35m[K^[m[K
+[3.133s] 
+[3.133s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2047:127:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.134s]  2047 |  sensor_id, float* max_duty_cycle, U32* timestamp[01;35m[K)[m[K;
+[3.134s]       |                                                  [01;35m[K^[m[K
+[3.135s] 
+[3.135s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2056:125:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.136s]  2056 | id sensor_id, float min_amplitude, U32* timestamp[01;35m[K)[m[K;
+[3.136s]       |                                                  [01;35m[K^[m[K
+[3.137s] 
+[3.137s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2065:126:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.138s]  2065 | d sensor_id, float* min_amplitude, U32* timestamp[01;35m[K)[m[K;
+[3.138s]       |                                                  [01;35m[K^[m[K
+[3.138s] 
+[3.139s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2075:125:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.139s]  2075 | id sensor_id, float max_amplitude, U32* timestamp[01;35m[K)[m[K;
+[3.140s]       |                                                  [01;35m[K^[m[K
+[3.140s] 
+[3.141s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2085:126:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.141s]  2085 | d sensor_id, float* max_amplitude, U32* timestamp[01;35m[K)[m[K;
+[3.141s]       |                                                  [01;35m[K^[m[K
+[3.142s] 
+[3.142s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2094:128:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.143s]  2094 | ensor_id, float min_step_duration, U32* timestamp[01;35m[K)[m[K;
+[3.143s]       |                                                  [01;35m[K^[m[K
+[3.143s] 
+[3.144s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2103:129:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.145s]  2103 | nsor_id, float* min_step_duration, U32* timestamp[01;35m[K)[m[K;
+[3.145s]       |                                                  [01;35m[K^[m[K
+[3.146s] 
+[3.146s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2112:128:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.147s]  2112 | ensor_id, float max_step_duration, U32* timestamp[01;35m[K)[m[K;
+[3.148s]       |                                                  [01;35m[K^[m[K
+[3.148s] 
+[3.149s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2121:129:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.150s]  2121 | nsor_id, float* max_step_duration, U32* timestamp[01;35m[K)[m[K;
+[3.150s]       |                                                  [01;35m[K^[m[K
+[3.152s] 
+[3.153s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2130:112:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.154s]  2130 | _device_id sensor_id, float slope, U32* timestamp[01;35m[K)[m[K;
+[3.154s]       |                                                  [01;35m[K^[m[K
+[3.155s] 
+[3.155s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2139:113:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.156s]  2139 | device_id sensor_id, float* slope, U32* timestamp[01;35m[K)[m[K;
+[3.156s]       |                                                  [01;35m[K^[m[K
+[3.157s] 
+[3.157s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2148:114:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.158s]  2148 | device_id sensor_id, float offset, U32* timestamp[01;35m[K)[m[K;
+[3.158s]       |                                                  [01;35m[K^[m[K
+[3.159s] 
+[3.159s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2157:115:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.160s]  2157 | evice_id sensor_id, float* offset, U32* timestamp[01;35m[K)[m[K;
+[3.160s]       |                                                  [01;35m[K^[m[K
+[3.161s] 
+[3.161s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2166:123:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.162s]  2166 | vice_id sensor_id, U8 unit_select, U32* timestamp[01;35m[K)[m[K;
+[3.162s]       |                                                  [01;35m[K^[m[K
+[3.162s] 
+[3.163s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2175:124:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.163s]  2175 | ice_id sensor_id, U8* unit_select, U32* timestamp[01;35m[K)[m[K;
+[3.164s]       |                                                  [01;35m[K^[m[K
+[3.164s] 
+[3.165s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2184:112:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.166s]  2184 | device_id sensor_id, float offset, U32* timestamp[01;35m[K)[m[K;
+[3.167s]       |                                                  [01;35m[K^[m[K
+[3.167s] 
+[3.168s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2193:122:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.168s]  2193 | _id sensor_id, float known_height, U32* timestamp[01;35m[K)[m[K;
+[3.169s]       |                                                  [01;35m[K^[m[K
+[3.169s] 
+[3.170s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2202:113:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.170s]  2202 | evice_id sensor_id, float* offset, U32* timestamp[01;35m[K)[m[K;
+[3.170s]       |                                                  [01;35m[K^[m[K
+[3.171s] 
+[3.171s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2211:116:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.172s]  2211 | ice_id sensor_id, float* altitude, U32* timestamp[01;35m[K)[m[K;
+[3.172s]       |                                                  [01;35m[K^[m[K
+[3.172s] 
+[3.173s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2220:114:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.173s]  2220 | ice_id sensor_id, float* altitude, U32* timestamp[01;35m[K)[m[K;
+[3.174s]       |                                                  [01;35m[K^[m[K
+[3.174s] 
+[3.175s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2229:121:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.175s]  2229 | e_id sensor_id, float* difference, U32* timestamp[01;35m[K)[m[K;
+[3.175s]       |                                                  [01;35m[K^[m[K
+[3.176s] 
+[3.176s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2238:116:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.177s]  2238 | ice_id sensor_id, float* pressure, U32* timestamp[01;35m[K)[m[K;
+[3.178s]       |                                                  [01;35m[K^[m[K
+[3.178s] 
+[3.179s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2247:114:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.179s]  2247 | vice_id sensor_id, float* heading, U32* timestamp[01;35m[K)[m[K;
+[3.180s]       |                                                  [01;35m[K^[m[K
+[3.180s] 
+[3.181s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2256:125:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.181s]  2256 | ensor_id, U16* step_buffer_length, U32* timestamp[01;35m[K)[m[K;
+[3.182s]       |                                                  [01;35m[K^[m[K
+[3.182s] 
+[3.183s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2265:122:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.183s]  2265 | ice_id sensor_id, float* distance, U32* timestamp[01;35m[K)[m[K;
+[3.184s]       |                                                  [01;35m[K^[m[K
+[3.184s] 
+[3.185s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2274:129:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.185s]  2274 | e_id sensor_id, float* confidence, U32* timestamp[01;35m[K)[m[K;
+[3.186s]       |                                                  [01;35m[K^[m[K
+[3.186s] 
+[3.187s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2283:112:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.187s]  2283 | sor_id, float* step_data, U32* timestamp[01;35m[K)[m[K; //Califaction
+[3.188s]       |                                         [01;35m[K^[m[K
+[3.188s] 
+[3.189s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2292:121:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.189s]  2292 | ce_id sensor_id, float* step_data, U32* timestamp[01;35m[K)[m[K;
+[3.190s]       |                                                  [01;35m[K^[m[K
+[3.190s] 
+[3.191s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2301:91:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.191s]  2301 | esetSteps(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[3.192s]       |                                                  [01;35m[K^[m[K
+[3.192s] 
+[3.193s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2309:89:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.193s]  2309 | _resetPort(tss_device_id sensor_id, U8* port_open[01;35m[K)[m[K;
+[3.193s]       |                                                  [01;35m[K^[m[K
+[3.194s] 
+[3.195s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2317:97:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.196s]  2317 | ge(tss_device_id sensor_id, const char* page_data[01;35m[K)[m[K;
+[3.196s]       |                                                  [01;35m[K^[m[K
+[3.197s] 
+[3.198s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2324:78:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.198s]  2324 |  tss_sensor_enterFirmware(tss_device_id sensor_id[01;35m[K)[m[K;
+[3.199s]       |                                                  [01;35m[K^[m[K
+[3.200s] 
+[3.201s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2332:92:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.201s]  2332 | tPageSize(tss_device_id sensor_id, U16* page_size[01;35m[K)[m[K;
+[3.202s]       |                                                  [01;35m[K^[m[K
+[3.203s] 
+[3.203s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2340:105:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.204s]  2340 | date(tss_device_id sensor_id, const char* address[01;35m[K)[m[K;
+[3.204s]       |                                                  [01;35m[K^[m[K
+[3.205s] 
+[3.206s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2347:83:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.207s]  2347 | sensor_stopFirmwareUpdate(tss_device_id sensor_id[01;35m[K)[m[K;
+[3.207s]       |                                                  [01;35m[K^[m[K
+[3.208s] 
+[3.209s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2355:114:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.210s]  2355 | le(tss_device_id sensor_id, const char* file_name[01;35m[K)[m[K;
+[3.210s]       |                                                  [01;35m[K^[m[K
+[3.211s] 
+[3.211s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2363:122:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.212s]  2363 | _device_id sensor_id, const char* update_contents[01;35m[K)[m[K;
+[3.212s]       |                                                  [01;35m[K^[m[K
+[3.212s] 
+[3.213s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2372:115:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.213s]  2372 |  sensor_id, U8* bytes, U16 amount, U32* timestamp[01;35m[K)[m[K;
+[3.214s]       |                                                  [01;35m[K^[m[K
+[3.214s] 
+[3.215s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2382:131:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.215s]  2382 | ytes, U16 amount, U16* read_count, U32* timestamp[01;35m[K)[m[K;
+[3.216s]       |                                                  [01;35m[K^[m[K
+[3.216s] 
+[3.217s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2389:92:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.218s]  2389 | nualFlush(tss_device_id sensor_id, U32* timestamp[01;35m[K)[m[K;
+[3.218s]       |                                                  [01;35m[K^[m[K
+[3.219s] 
+[3.219s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2401:91:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.221s]  2401 | ngle(const char* port_name, tss_device_id* out_id[01;35m[K)[m[K;
+[3.221s]       |                                                  [01;35m[K^[m[K
+[3.222s] 
+[3.222s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2408:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.223s]  2408 | SS_ERROR tss_removeDongle(tss_device_id dongle_id[01;35m[K)[m[K;
+[3.223s]       |                                                  [01;35m[K^[m[K
+[3.223s] 
+[3.224s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2417:72:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.224s]  2417 | OR tss_dongle_isConnected(tss_device_id dongle_id[01;35m[K)[m[K;
+[3.224s]       |                                                  [01;35m[K^[m[K
+[3.225s] 
+[3.225s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2425:96:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.226s]  2425 | loader(tss_device_id dongle_id, U8* in_bootloader[01;35m[K)[m[K;
+[3.226s]       |                                                  [01;35m[K^[m[K
+[3.227s] 
+[3.227s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2433:100:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.227s]  2433 | oaderMode(tss_device_id dongle_id, U32* timestamp[01;35m[K)[m[K;
+[3.228s]       |                                                  [01;35m[K^[m[K
+[3.228s] 
+[3.229s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2441:99:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.229s]  2441 | Timestamp(tss_device_id dongle_id, U32* timestamp[01;35m[K)[m[K;
+[3.229s]       |                                                  [01;35m[K^[m[K
+[3.230s] 
+[3.230s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2448:101:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.231s]  2448 | mestamp(tss_device_id dongle_id, float* timestamp[01;35m[K)[m[K;
+[3.231s]       |                                                  [01;35m[K^[m[K
+[3.231s] 
+[3.232s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2456:112:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.232s]  2456 | _id dongle_id, U32* serial_number, U32* timestamp[01;35m[K)[m[K;
+[3.233s]       |                                                  [01;35m[K^[m[K
+[3.233s] 
+[3.233s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2464:114:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.234s]  2464 | (tss_device_id dongle_id, char* hw_version_string[01;35m[K)[m[K;
+[3.234s]       |                                                  [01;35m[K^[m[K
+[3.235s] 
+[3.235s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2472:114:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.235s]  2472 | (tss_device_id dongle_id, char* fw_version_string[01;35m[K)[m[K;
+[3.236s]       |                                                  [01;35m[K^[m[K
+[3.236s] 
+[3.236s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2481:115:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.237s]  2481 |  dongle_id, U8* bytes, U16 amount, U32* timestamp[01;35m[K)[m[K;
+[3.237s]       |                                                  [01;35m[K^[m[K
+[3.238s] 
+[3.238s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2491:131:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.239s]  2491 | ytes, U16 amount, U16* read_count, U32* timestamp[01;35m[K)[m[K;
+[3.239s]       |                                                  [01;35m[K^[m[K
+[3.239s] 
+[3.240s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2498:92:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.240s]  2498 | nualFlush(tss_device_id dongle_id, U32* timestamp[01;35m[K)[m[K;
+[3.241s]       |                                                  [01;35m[K^[m[K
+[3.241s] 
+[3.242s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2506:89:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.243s]  2506 | _resetPort(tss_device_id dongle_id, U8* port_open[01;35m[K)[m[K;
+[3.243s]       |                                                  [01;35m[K^[m[K
+[3.243s] 
+[3.244s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2514:97:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.244s]  2514 | ge(tss_device_id dongle_id, const char* page_data[01;35m[K)[m[K;
+[3.244s]       |                                                  [01;35m[K^[m[K
+[3.245s] 
+[3.245s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2521:78:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.246s]  2521 |  tss_dongle_enterFirmware(tss_device_id dongle_id[01;35m[K)[m[K;
+[3.246s]       |                                                  [01;35m[K^[m[K
+[3.247s] 
+[3.248s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2529:92:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.248s]  2529 | tPageSize(tss_device_id dongle_id, U16* page_size[01;35m[K)[m[K;
+[3.249s]       |                                                  [01;35m[K^[m[K
+[3.249s] 
+[3.250s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2537:105:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.251s]  2537 | date(tss_device_id dongle_id, const char* address[01;35m[K)[m[K;
+[3.253s]       |                                                  [01;35m[K^[m[K
+[3.253s] 
+[3.254s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2544:83:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.254s]  2544 | dongle_stopFirmwareUpdate(tss_device_id dongle_id[01;35m[K)[m[K;
+[3.255s]       |                                                  [01;35m[K^[m[K
+[3.255s] 
+[3.256s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2552:114:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.256s]  2552 | le(tss_device_id dongle_id, const char* file_name[01;35m[K)[m[K;
+[3.257s]       |                                                  [01;35m[K^[m[K
+[3.257s] 
+[3.258s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2560:122:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.258s]  2560 | _device_id dongle_id, const char* update_contents[01;35m[K)[m[K;
+[3.258s]       |                                                  [01;35m[K^[m[K
+[3.259s] 
+[3.259s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2570:92:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.260s]  2570 | rt(tss_device_id dongle_id, const char* port_name[01;35m[K)[m[K;
+[3.260s]       |                                                  [01;35m[K^[m[K
+[3.261s] 
+[3.261s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2577:70:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.261s]  2577 | RROR tss_dongle_closePort(tss_device_id dongle_id[01;35m[K)[m[K;
+[3.262s]       |                                                  [01;35m[K^[m[K
+[3.262s] 
+[3.263s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2586:85:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.263s]  2586 | _enableTimestampsWireless(tss_device_id dongle_id[01;35m[K)[m[K;
+[3.263s]       |                                                  [01;35m[K^[m[K
+[3.264s] 
+[3.265s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2593:86:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.266s]  2593 | disableTimestampsWireless(tss_device_id dongle_id[01;35m[K)[m[K;
+[3.267s]       |                                                  [01;35m[K^[m[K
+[3.267s] 
+[3.268s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2604:116:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.268s]  2604 | d dongle_id, U8 logical_id, tss_device_id* out_id[01;35m[K)[m[K;
+[3.268s]       |                                                  [01;35m[K^[m[K
+[3.269s] 
+[3.269s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2612:96:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.270s]  2612 | lessSensor(tss_device_id dongle_id, U8 logical_id[01;35m[K)[m[K;
+[3.270s]       |                                                  [01;35m[K^[m[K
+[3.270s] 
+[3.271s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2626:138:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.271s]  2626 | le_id, U32 data_flags, U32 interval, U32 duration[01;35m[K)[m[K;
+[3.271s]       |                                                  [01;35m[K^[m[K
+[3.272s] 
+[3.272s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2633:75:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.272s]  2633 | tss_dongle_startStreaming(tss_device_id dongle_id[01;35m[K)[m[K;
+[3.272s]       |                                                  [01;35m[K^[m[K
+[3.273s] 
+[3.273s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2640:74:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.273s]  2640 |  tss_dongle_stopStreaming(tss_device_id dongle_id[01;35m[K)[m[K;
+[3.274s]       |                                                  [01;35m[K^[m[K
+[3.274s] 
+[3.274s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2649:78:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.275s]  2649 |  tss_dongle_softwareReset(tss_device_id dongle_id[01;35m[K)[m[K;
+[3.275s]       |                                                  [01;35m[K^[m[K
+[3.275s] 
+[3.276s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2658:100:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.276s]  2658 | (tss_device_id dongle_id, U8 mode, U32* timestamp[01;35m[K)[m[K;
+[3.276s]       |                                                  [01;35m[K^[m[K
+[3.277s] 
+[3.277s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2667:101:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.278s]  2667 | tss_device_id dongle_id, U8* mode, U32* timestamp[01;35m[K)[m[K;
+[3.278s]       |                                                  [01;35m[K^[m[K
+[3.279s] 
+[3.279s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2676:117:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.279s]  2676 | ongle_id, const float* rgb_color3, U32* timestamp[01;35m[K)[m[K;
+[3.280s]       |                                                  [01;35m[K^[m[K
+[3.280s] 
+[3.281s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2685:111:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.281s]  2685 | e_id dongle_id, float* rgb_color3, U32* timestamp[01;35m[K)[m[K;
+[3.281s]       |                                                  [01;35m[K^[m[K
+[3.282s] 
+[3.283s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2694:126:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.283s]  2694 | evice_id dongle_id, U32* bitfield, U32* timestamp[01;35m[K)[m[K;
+[3.284s]       |                                                  [01;35m[K^[m[K
+[3.284s] 
+[3.285s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2703:125:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.285s]  2703 | device_id dongle_id, U32 bitfield, U32* timestamp[01;35m[K)[m[K;
+[3.286s]       |                                                  [01;35m[K^[m[K
+[3.286s] 
+[3.287s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2712:108:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.287s]  2712 | _device_id dongle_id, U8* channel, U32* timestamp[01;35m[K)[m[K;
+[3.287s]       |                                                  [01;35m[K^[m[K
+[3.288s] 
+[3.288s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2721:107:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.289s]  2721 | s_device_id dongle_id, U8 channel, U32* timestamp[01;35m[K)[m[K;
+[3.289s]       |                                                  [01;35m[K^[m[K
+[3.290s] 
+[3.290s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2730:106:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.291s]  2730 | _device_id dongle_id, U16* pan_id, U32* timestamp[01;35m[K)[m[K;
+[3.291s]       |                                                  [01;35m[K^[m[K
+[3.292s] 
+[3.292s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2739:105:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.292s]  2739 | s_device_id dongle_id, U16 pan_id, U32* timestamp[01;35m[K)[m[K;
+[3.293s]       |                                                  [01;35m[K^[m[K
+[3.293s] 
+[3.294s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2749:138:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.294s]  2749 | U8 logical_id, U32* serial_number, U32* timestamp[01;35m[K)[m[K;
+[3.295s]       |                                                  [01;35m[K^[m[K
+[3.295s] 
+[3.296s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2759:137:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.296s]  2759 |  U8 logical_id, U32 serial_number, U32* timestamp[01;35m[K)[m[K;
+[3.296s]       |                                                  [01;35m[K^[m[K
+[3.297s] 
+[3.297s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2767:99:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.298s]  2767 | sSettings(tss_device_id dongle_id, U32* timestamp[01;35m[K)[m[K;
+[3.298s]       |                                                  [01;35m[K^[m[K
+[3.298s] 
+[3.299s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2776:113:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.299s]  2776 | device_id dongle_id, U16* address, U32* timestamp[01;35m[K)[m[K;
+[3.300s]       |                                                  [01;35m[K^[m[K
+[3.302s] 
+[3.303s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2785:123:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.303s]  2785 | (tss_device_id dongle_id, U8 mode, U32* timestamp[01;35m[K)[m[K;
+[3.304s]       |                                                  [01;35m[K^[m[K
+[3.305s] 
+[3.305s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2794:124:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.306s]  2794 | tss_device_id dongle_id, U8* mode, U32* timestamp[01;35m[K)[m[K;
+[3.307s]       |                                                  [01;35m[K^[m[K
+[3.308s] 
+[3.308s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2803:147:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.309s]  2803 | gle_id, U16 manual_flush_bitfield, U32* timestamp[01;35m[K)[m[K;
+[3.309s]       |                                                  [01;35m[K^[m[K
+[3.310s] 
+[3.310s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2812:148:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.311s]  2812 | le_id, U16* manual_flush_bitfield, U32* timestamp[01;35m[K)[m[K;
+[3.311s]       |                                                  [01;35m[K^[m[K
+[3.312s] 
+[3.312s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2820:110:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.312s]  2820 | tionPulse(tss_device_id dongle_id, U32* timestamp[01;35m[K)[m[K;
+[3.313s]       |                                                  [01;35m[K^[m[K
+[3.313s] 
+[3.314s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2828:135:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.314s]  2828 | ongle_id, U8* channel_strengths16, U32* timestamp[01;35m[K)[m[K;
+[3.315s]       |                                                  [01;35m[K^[m[K
+[3.316s] 
+[3.316s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2837:111:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.317s]  2837 | s_device_id dongle_id, U8 retries, U32* timestamp[01;35m[K)[m[K;
+[3.317s]       |                                                  [01;35m[K^[m[K
+[3.318s] 
+[3.319s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2846:112:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.319s]  2846 | _device_id dongle_id, U8* retries, U32* timestamp[01;35m[K)[m[K;
+[3.319s]       |                                                  [01;35m[K^[m[K
+[3.322s] 
+[3.323s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2855:117:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.323s]  2855 | vice_id dongle_id, U8* slots_open, U32* timestamp[01;35m[K)[m[K;
+[3.324s]       |                                                  [01;35m[K^[m[K
+[3.324s] 
+[3.324s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2864:131:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.324s]  2864 | , U8* last_packet_signal_strength, U32* timestamp[01;35m[K)[m[K;
+[3.325s]       |                                                  [01;35m[K^[m[K
+[3.325s] 
+[3.325s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[3.326s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2873:135:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.326s]  2873 | id dongle_id, U32 header_bitfield, U32* timestamp[01;35m[K)[m[K;
+[3.327s]       |                                                  [01;35m[K^[m[K
+[3.327s] 
+[3.327s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2882:136:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.328s]  2882 | d dongle_id, U32* header_bitfield, U32* timestamp[01;35m[K)[m[K;
+[3.328s]       |                                                  [01;35m[K^[m[K
+[3.329s] 
+[3.329s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[3.330s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2891:125:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.330s]  2891 | _id dongle_id, U8 HID_update_rate, U32* timestamp[01;35m[K)[m[K;
+[3.330s]       |                                                  [01;35m[K^[m[K
+[3.331s] 
+[3.331s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2900:126:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.332s]  2900 | id dongle_id, U8* HID_update_rate, U32* timestamp[01;35m[K)[m[K;
+[3.333s]       |                                                  [01;35m[K^[m[K
+[3.334s] 
+[3.334s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2909:138:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.335s]  2909 | gle_id, U8 HID_communication_mode, U32* timestamp[01;35m[K)[m[K;
+[3.335s]       |                                                  [01;35m[K^[m[K
+[3.336s] 
+[3.336s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2918:139:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.337s]  2918 | le_id, U8* HID_communication_mode, U32* timestamp[01;35m[K)[m[K;
+[3.337s]       |                                                  [01;35m[K^[m[K
+[3.338s] 
+[3.338s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2927:116:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.339s]  2927 | evice_id dongle_id, U8 logical_ID, U32* timestamp[01;35m[K)[m[K;
+[3.339s]       |                                                  [01;35m[K^[m[K
+[3.339s] 
+[3.340s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2936:113:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.340s]  2936 | evice_id dongle_id, U8 logical_ID, U32* timestamp[01;35m[K)[m[K;
+[3.341s]       |                                                  [01;35m[K^[m[K
+[3.341s] 
+[3.341s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2945:117:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.342s]  2945 | vice_id dongle_id, U8* logical_ID, U32* timestamp[01;35m[K)[m[K;
+[3.343s]       |                                                  [01;35m[K^[m[K
+[3.343s] 
+[3.344s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2954:114:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.344s]  2954 | vice_id dongle_id, U8* logical_ID, U32* timestamp[01;35m[K)[m[K;
+[3.345s]       |                                                  [01;35m[K^[m[K
+[3.345s] 
+[3.346s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2962:59:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.346s]  2962 | SS_EXPORT void tss_findSensorPorts(U32 find_flags[01;35m[K)[m[K;
+[3.347s]       |                                                  [01;35m[K^[m[K
+[3.347s] 
+[3.348s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/ThreeSpace_API_C_3.0.6/threespace_api_export.h:2971:106:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdllexport[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+[3.348s]  2971 |  port_name, U16* sensor_type, U8* connection_type[01;35m[K)[m[K;
+[3.348s]       |                                                  [01;35m[K^[m[K
+[3.349s] 
+[11.910s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In member function ‘[01m[Kvoid PavbotIMU::update()[m[K’:
+[11.911s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:46:21:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> > >::publish(std_msgs::msg::Float32&)[m[K’
+[11.911s]    46 |     [01;31m[Kimu_pub->publish(msg)[m[K;
+[11.912s]       |     [01;31m[K~~~~~~~~~~~~~~~~^~~~~[m[K
+[11.918s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[11.919s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[11.921s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[11.922s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.922s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.923s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.923s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.924s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.924s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.925s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.926s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:12[m[K:
+[11.926s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:254:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) [with T = T; MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[11.927s]   254 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)
+[11.930s]       |   [01;36m[K^~~~~~~[m[K
+[11.931s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:254:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.932s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:46:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<std_msgs::msg::Bool_<std::allocator<void> > > >[m[K’
+[11.933s]    46 |     [01;36m[Kimu_pub->publish(msg)[m[K;
+[11.937s]       |     [01;36m[K~~~~~~~~~~~~~~~~^~~~~[m[K
+[11.938s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[11.939s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[11.939s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[11.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.942s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.942s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.943s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.943s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.944s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:12[m[K:
+[11.945s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:295:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(const T&) [with T = T; MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[11.945s]   295 |   [01;36m[Kpublish[m[K(const T & msg)
+[11.946s]       |   [01;36m[K^~~~~~~[m[K
+[11.948s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:295:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.949s] In file included from [01m[K/usr/include/c++/11/bits/move.h:57[m[K,
+[11.950s]                  from [01m[K/usr/include/c++/11/bits/stl_pair.h:59[m[K,
+[11.951s]                  from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[11.954s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[11.955s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.956s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:12[m[K:
+[11.957s] /usr/include/c++/11/type_traits: In substitution of ‘[01m[Ktemplate<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = void][m[K’:
+[11.957s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:295:3:[m[K   required by substitution of ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, std_msgs::msg::Bool_<std::allocator<void> > >::value), void> rclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> > >::publish<T>(const T&) [with T = std_msgs::msg::Float32_<std::allocator<void> >][m[K’
+[11.958s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:46:21:[m[K   required from here
+[11.958s] [01m[K/usr/include/c++/11/type_traits:2579:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[11.959s]  2579 |     using [01;31m[Kenable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+[11.959s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[11.960s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[11.961s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[11.961s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[11.962s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.962s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.963s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.963s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.964s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.964s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.964s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.965s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:12[m[K:
+[11.965s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:325:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) [with T = T; MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[11.966s]   325 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, PublishedTypeDeleter> msg)
+[11.966s]       |   [01;36m[K^~~~~~~[m[K
+[11.967s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:325:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.967s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:46:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<std_msgs::msg::Bool_<std::allocator<void> > > >[m[K’
+[11.968s]    46 |     [01;36m[Kimu_pub->publish(msg)[m[K;
+[11.968s]       |     [01;36m[K~~~~~~~~~~~~~~~~^~~~~[m[K
+[11.968s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[11.969s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[11.969s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[11.970s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.970s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.972s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.972s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.972s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:12[m[K:
+[11.973s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:367:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(const T&) [with T = T; MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[11.973s]   367 |   [01;36m[Kpublish[m[K(const T & msg)
+[11.975s]       |   [01;36m[K^~~~~~~[m[K
+[11.975s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:367:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.976s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:386:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s][m[K’
+[11.976s]   386 |   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+[11.976s]       |   [01;36m[K^~~~~~~[m[K
+[11.977s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:386:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} to ‘[01m[Kconst rcl_serialized_message_t&[m[K’ {aka ‘[01m[Kconst rcutils_uint8_array_s&[m[K’}
+[11.977s]   386 | ublish([01;36m[Kconst rcl_serialized_message_t & serialized_msg[m[K)
+[11.978s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[11.978s] 
+[11.979s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:392:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rclcpp::SerializedMessage&) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[11.979s]   392 |   [01;36m[Kpublish[m[K(const SerializedMessage & serialized_msg)
+[11.979s]       |   [01;36m[K^~~~~~~[m[K
+[11.980s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:392:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’
+[11.980s]   392 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+[11.981s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[11.981s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:406:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = std_msgs::msg::Bool_<std::allocator<void> >][m[K’
+[11.981s]   406 |   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)
+[11.982s]       |   [01;36m[K^~~~~~~[m[K
+[11.982s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:406:64:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} to ‘[01m[Krclcpp::LoanedMessage<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+[11.982s]   406 | [01;36m[KdMessage<ROSMessageType, AllocatorT> && loaned_msg[m[K)
+[11.982s]       | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[11.983s] 
+[12.024s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In constructor ‘[01m[KPavbotIMU::PavbotIMU()[m[K’:
+[12.025s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:71:5:[m[K [01;31m[Kerror: [m[K‘[01m[KTSS_ID[m[K’ was not declared in this scope; did you mean ‘[01m[KTSS_LX[m[K’?
+[12.025s]    71 |     [01;31m[KTSS_ID[m[K test;
+[12.025s]       |     [01;31m[K^~~~~~[m[K
+[12.026s]       |     [32m[KTSS_LX[m[K
+[14.872s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[14.873s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[14.874s] gmake: *** [Makefile:146: all] Error 2
+[14.888s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4

@@ -1,0 +1,165 @@
+[0.071s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.263s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.363s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[10.681s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In member function ‘[01m[Kvoid PavbotIMU::update()[m[K’:
+[10.683s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:48:21:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> > >::publish(std_msgs::msg::Float32&)[m[K’
+[10.684s]    48 |     [01;31m[Kimu_pub->publish(msg)[m[K;
+[10.684s]       |     [01;31m[K~~~~~~~~~~~~~~~~^~~~~[m[K
+[10.685s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[10.685s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[10.686s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[10.686s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.687s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.687s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.687s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.690s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[10.690s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:254:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) [with T = T; MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[10.691s]   254 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)
+[10.691s]       |   [01;36m[K^~~~~~~[m[K
+[10.692s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:254:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[10.692s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:48:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<std_msgs::msg::Bool_<std::allocator<void> > > >[m[K’
+[10.693s]    48 |     [01;36m[Kimu_pub->publish(msg)[m[K;
+[10.693s]       |     [01;36m[K~~~~~~~~~~~~~~~~^~~~~[m[K
+[10.694s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[10.694s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[10.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[10.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.696s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.697s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.697s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.697s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.698s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[10.699s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:295:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(const T&) [with T = T; MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[10.699s]   295 |   [01;36m[Kpublish[m[K(const T & msg)
+[10.700s]       |   [01;36m[K^~~~~~~[m[K
+[10.700s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:295:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[10.701s] In file included from [01m[K/usr/include/c++/11/bits/move.h:57[m[K,
+[10.701s]                  from [01m[K/usr/include/c++/11/bits/stl_pair.h:59[m[K,
+[10.701s]                  from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[10.702s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[10.702s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[10.703s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[10.703s] /usr/include/c++/11/type_traits: In substitution of ‘[01m[Ktemplate<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = void][m[K’:
+[10.704s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:295:3:[m[K   required by substitution of ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, std_msgs::msg::Bool_<std::allocator<void> > >::value), void> rclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> > >::publish<T>(const T&) [with T = std_msgs::msg::Float32_<std::allocator<void> >][m[K’
+[10.704s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:48:21:[m[K   required from here
+[10.705s] [01m[K/usr/include/c++/11/type_traits:2579:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[10.705s]  2579 |     using [01;31m[Kenable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+[10.705s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[10.706s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[10.706s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[10.707s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[10.707s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.707s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.708s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.708s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.709s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.709s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.710s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.710s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[10.711s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:325:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) [with T = T; MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[10.711s]   325 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, PublishedTypeDeleter> msg)
+[10.711s]       |   [01;36m[K^~~~~~~[m[K
+[10.712s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:325:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[10.712s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:48:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<std_msgs::msg::Bool_<std::allocator<void> > > >[m[K’
+[10.713s]    48 |     [01;36m[Kimu_pub->publish(msg)[m[K;
+[10.713s]       |     [01;36m[K~~~~~~~~~~~~~~~~^~~~~[m[K
+[10.713s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[10.714s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[10.715s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[10.715s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.716s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.716s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.717s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.718s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.719s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.720s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.724s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[10.725s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:367:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(const T&) [with T = T; MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[10.726s]   367 |   [01;36m[Kpublish[m[K(const T & msg)
+[10.727s]       |   [01;36m[K^~~~~~~[m[K
+[10.728s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:367:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[10.728s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:386:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s][m[K’
+[10.729s]   386 |   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+[10.729s]       |   [01;36m[K^~~~~~~[m[K
+[10.730s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:386:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} to ‘[01m[Kconst rcl_serialized_message_t&[m[K’ {aka ‘[01m[Kconst rcutils_uint8_array_s&[m[K’}
+[10.730s]   386 | ublish([01;36m[Kconst rcl_serialized_message_t & serialized_msg[m[K)
+[10.731s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[10.731s] 
+[10.732s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:392:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rclcpp::SerializedMessage&) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[10.732s]   392 |   [01;36m[Kpublish[m[K(const SerializedMessage & serialized_msg)
+[10.733s]       |   [01;36m[K^~~~~~~[m[K
+[10.733s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:392:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’
+[10.733s]   392 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+[10.734s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[10.734s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:406:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = std_msgs::msg::Bool_<std::allocator<void> >][m[K’
+[10.735s]   406 |   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)
+[10.735s]       |   [01;36m[K^~~~~~~[m[K
+[10.736s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:406:64:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} to ‘[01m[Krclcpp::LoanedMessage<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+[10.736s]   406 | [01;36m[KdMessage<ROSMessageType, AllocatorT> && loaned_msg[m[K)
+[10.737s]       | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[10.737s] 
+[10.772s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In constructor ‘[01m[KPavbotIMU::PavbotIMU()[m[K’:
+[10.772s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:78:12:[m[K [01;31m[Kerror: [m[K‘[01m[K::open[m[K’ has not been declared; did you mean ‘[01m[Kpopen[m[K’?
+[10.773s]    78 |     fd = ::[01;31m[Kopen[m[K(port.c_str(), O_RDONLY | O_NOCTTY | O_SYNC);
+[10.773s]       |            [01;31m[K^~~~[m[K
+[10.774s]       |            [32m[Kpopen[m[K
+[10.794s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:78:31:[m[K [01;31m[Kerror: [m[K‘[01m[KO_RDONLY[m[K’ was not declared in this scope
+[10.795s]    78 |     fd = ::open(port.c_str(), [01;31m[KO_RDONLY[m[K | O_NOCTTY | O_SYNC);
+[10.795s]       |                               [01;31m[K^~~~~~~~[m[K
+[10.818s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:78:42:[m[K [01;31m[Kerror: [m[K‘[01m[KO_NOCTTY[m[K’ was not declared in this scope; did you mean ‘[01m[KENOTTY[m[K’?
+[10.819s]    78 |    fd = ::open(port.c_str(), O_RDONLY | [01;31m[KO_NOCTTY[m[K | O_SYNC);
+[10.820s]       |                                         [01;31m[K^~~~~~~~[m[K
+[10.820s]       |                                         [32m[KENOTTY[m[K
+[10.842s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:78:53:[m[K [01;31m[Kerror: [m[K‘[01m[KO_SYNC[m[K’ was not declared in this scope
+[10.842s]    78 | ::open(port.c_str(), O_RDONLY | O_NOCTTY | [01;31m[KO_SYNC[m[K);
+[10.843s]       |                                            [01;31m[K^~~~~~[m[K
+[10.843s] 
+[10.845s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:85:20:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[KPavbotIMU::PavbotIMU()::termios tty[m[K’ has initializer but incomplete type
+[10.846s]    85 |     struct termios [01;31m[Ktty[m[K{};
+[10.846s]       |                    [01;31m[K^~~[m[K
+[10.867s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:86:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcgetattr[m[K’ was not declared in this scope
+[10.868s]    86 |     [01;31m[Ktcgetattr[m[K(fd, &tty);
+[10.868s]       |     [01;31m[K^~~~~~~~~[m[K
+[10.888s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:88:23:[m[K [01;31m[Kerror: [m[K‘[01m[KB115200[m[K’ was not declared in this scope
+[10.889s]    88 |     cfsetospeed(&tty, [01;31m[KB115200[m[K);
+[10.890s]       |                       [01;31m[K^~~~~~~[m[K
+[10.912s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:88:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcfsetospeed[m[K’ was not declared in this scope
+[10.913s]    88 |     [01;31m[Kcfsetospeed[m[K(&tty, B115200);
+[10.913s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[10.940s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:89:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcfsetispeed[m[K’ was not declared in this scope
+[10.941s]    89 |     [01;31m[Kcfsetispeed[m[K(&tty, B115200);
+[10.941s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[10.960s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:91:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOCAL[m[K’ was not declared in this scope; did you mean ‘[01m[KRCL_LOCAL[m[K’?
+[10.961s]    91 |     tty.c_cflag |= ([01;31m[KCLOCAL[m[K | CREAD);
+[10.961s]       |                     [01;31m[K^~~~~~[m[K
+[10.962s]       |                     [32m[KRCL_LOCAL[m[K
+[10.980s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:91:30:[m[K [01;31m[Kerror: [m[K‘[01m[KCREAD[m[K’ was not declared in this scope
+[10.980s]    91 |     tty.c_cflag |= (CLOCAL | [01;31m[KCREAD[m[K);
+[10.981s]       |                              [01;31m[K^~~~~[m[K
+[10.999s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:92:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCSIZE[m[K’ was not declared in this scope
+[11.000s]    92 |     tty.c_cflag &= ~[01;31m[KCSIZE[m[K;
+[11.001s]       |                     [01;31m[K^~~~~[m[K
+[11.019s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:93:20:[m[K [01;31m[Kerror: [m[K‘[01m[KCS8[m[K’ was not declared in this scope
+[11.020s]    93 |     tty.c_cflag |= [01;31m[KCS8[m[K;
+[11.021s]       |                    [01;31m[K^~~[m[K
+[11.042s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:94:21:[m[K [01;31m[Kerror: [m[K‘[01m[KPARENB[m[K’ was not declared in this scope
+[11.043s]    94 |     tty.c_cflag &= ~[01;31m[KPARENB[m[K;
+[11.044s]       |                     [01;31m[K^~~~~~[m[K
+[11.063s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:95:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCSTOPB[m[K’ was not declared in this scope
+[11.063s]    95 |     tty.c_cflag &= ~[01;31m[KCSTOPB[m[K;
+[11.064s]       |                     [01;31m[K^~~~~~[m[K
+[11.084s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:97:19:[m[K [01;31m[Kerror: [m[K‘[01m[KTCSANOW[m[K’ was not declared in this scope
+[11.085s]    97 |     tcsetattr(fd, [01;31m[KTCSANOW[m[K, &tty);
+[11.085s]       |                   [01;31m[K^~~~~~~[m[K
+[11.106s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:97:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcsetattr[m[K’ was not declared in this scope
+[11.106s]    97 |     [01;31m[Ktcsetattr[m[K(fd, TCSANOW, &tty);
+[11.107s]       |     [01;31m[K^~~~~~~~~[m[K
+[13.871s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[13.873s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[13.874s] gmake: *** [Makefile:146: all] Error 2
+[13.883s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
