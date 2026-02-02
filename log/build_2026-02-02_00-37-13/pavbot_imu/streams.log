@@ -1,0 +1,29 @@
+[0.072s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.268s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.371s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[11.987s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In constructor ‘[01m[KPavbotIMU::PavbotIMU()[m[K’:
+[11.988s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:53:34:[m[K [01;31m[Kerror: [m[K‘[01m[KIMU::IMU(std::string, speed_t, int)[m[K’ is private within this context
+[11.988s]    53 |   PavbotIMU() : Node("pavbot_imu"[01;31m[K)[m[K {
+[11.989s]       |                                  [01;31m[K^[m[K
+[11.989s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16[m[K:
+[11.990s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:13:5:[m[K [01;36m[Knote: [m[Kdeclared private here
+[11.990s]    13 |     [01;36m[KIMU[m[K(std::string port = "/dev/ttyUSB0", speed_t baud = B115200, int timeout_ms = 500)
+[11.991s]       |     [01;36m[K^~~[m[K
+[12.040s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:72:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid IMU::configure(std::string, speed_t, int)[m[K’ is private within this context
+[12.040s]    72 |     [01;31m[Kimu.configure(port, B115200, timeout_ms)[m[K;
+[12.041s]       |     [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.041s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16[m[K:
+[12.042s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:18:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+[12.042s]    18 |     void [01;36m[Kconfigure[m[K(std::string port, speed_t baud, int timeout_ms) {
+[12.043s]       |          [01;36m[K^~~~~~~~~[m[K
+[12.043s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:74:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool IMU::open()[m[K’ is private within this context
+[12.043s]    74 |     if ([01;31m[Kimu.open()[m[K) {
+[12.044s]       |         [01;31m[K~~~~~~~~^~[m[K
+[12.044s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16[m[K:
+[12.044s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:24:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+[12.045s]    24 |     bool [01;36m[Kopen[m[K() {
+[12.050s]       |          [01;36m[K^~~~[m[K
+[15.137s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[15.138s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[15.139s] gmake: *** [Makefile:146: all] Error 2
+[15.146s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4

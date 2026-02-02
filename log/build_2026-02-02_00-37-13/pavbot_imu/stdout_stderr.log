@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In constructor ‘[01m[KPavbotIMU::PavbotIMU()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:53:34:[m[K [01;31m[Kerror: [m[K‘[01m[KIMU::IMU(std::string, speed_t, int)[m[K’ is private within this context
+   53 |   PavbotIMU() : Node("pavbot_imu"[01;31m[K)[m[K {
+      |                                  [01;31m[K^[m[K
+In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16[m[K:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:13:5:[m[K [01;36m[Knote: [m[Kdeclared private here
+   13 |     [01;36m[KIMU[m[K(std::string port = "/dev/ttyUSB0", speed_t baud = B115200, int timeout_ms = 500)
+      |     [01;36m[K^~~[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:72:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid IMU::configure(std::string, speed_t, int)[m[K’ is private within this context
+   72 |     [01;31m[Kimu.configure(port, B115200, timeout_ms)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16[m[K:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:18:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   18 |     void [01;36m[Kconfigure[m[K(std::string port, speed_t baud, int timeout_ms) {
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:74:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool IMU::open()[m[K’ is private within this context
+   74 |     if ([01;31m[Kimu.open()[m[K) {
+      |         [01;31m[K~~~~~~~~^~[m[K
+In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16[m[K:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:24:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   24 |     bool [01;36m[Kopen[m[K() {
+      |          [01;36m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

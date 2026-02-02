@@ -715,6 +715,7 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp \
+  ../../src/imu.h \
   /usr/include/fcntl.h \
   /usr/include/aarch64-linux-gnu/bits/fcntl.h \
   /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
@@ -759,6 +760,8 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
 /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h:
 
 /usr/include/aarch64-linux-gnu/bits/fcntl.h:
+
+../../src/imu.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp:
 
