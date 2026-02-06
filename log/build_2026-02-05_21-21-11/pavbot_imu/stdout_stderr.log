@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:17[m[K:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:14:10:[m[K [01;31m[Kfatal error: [m[Kimu_packet_builder.h: No such file or directory
+   14 | #include [01;31m[K"imu_packet_builder.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

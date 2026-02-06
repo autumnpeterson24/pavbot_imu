@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In member function ‘[01m[Kvoid PavbotIMU::update()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:46:77:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kdouble[m[K’ and ‘[01m[Kint[m[K’ to binary ‘[01m[Koperator%[m[K’
+   46 | [32m[Katic_cast<int>(heading.value()) * TO_DEG)[m[K [01;31m[K%[m[K [34m[K360[m[K)) % 360;
+      | [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~[m[K
+      |                                             [34m[K|[m[K
+      |                                             [34m[Kint[m[K
+
+gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

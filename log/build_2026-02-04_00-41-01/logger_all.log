@@ -1,0 +1,106 @@
+[0.463s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.463s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff86cd1180>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff86e7a0e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff86e7a0e0>>, mixin_verb=('build',))
+[1.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.404s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.404s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.404s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.404s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.404s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.405s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mrstalford/ros2_ws/src/pavbot_imu'
+[1.405s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.460s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'pavbot_imu'
+[1.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.461s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.595s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/mrstalford/ros2_ws/src/pavbot_imu/install
+[1.598s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/mrstalford/ros2_ws/install
+[1.600s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/mrstalford/ros2_ws/src/pavbot_gps/install
+[1.610s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 272 installed packages in /opt/ros/humble
+[1.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.783s] Level 5:colcon.colcon_core.verb:set package 'pavbot_imu' build argument 'cmake_args' from command line to 'None'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'pavbot_imu' build argument 'cmake_target' from command line to 'None'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'pavbot_imu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'pavbot_imu' build argument 'cmake_clean_cache' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'pavbot_imu' build argument 'cmake_clean_first' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'pavbot_imu' build argument 'cmake_force_configure' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'pavbot_imu' build argument 'ament_cmake_args' from command line to 'None'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'pavbot_imu' build argument 'catkin_cmake_args' from command line to 'None'
+[1.785s] Level 5:colcon.colcon_core.verb:set package 'pavbot_imu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.785s] DEBUG:colcon.colcon_core.verb:Building package 'pavbot_imu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu', 'merge_install': False, 'path': '/home/mrstalford/ros2_ws/src/pavbot_imu', 'symlink_install': False, 'test_result_base': None}
+[1.785s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.789s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.790s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mrstalford/ros2_ws/src/pavbot_imu' with build type 'ament_cmake'
+[1.791s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mrstalford/ros2_ws/src/pavbot_imu'
+[1.799s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.800s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.800s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.854s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[21.924s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[21.968s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu
+[22.023s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pavbot_imu)
+[22.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu
+[22.035s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu' for CMake module files
+[22.038s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu' for CMake config files
+[22.040s] Level 1:colcon.colcon_core.shell:create_environment_hook('pavbot_imu', 'cmake_prefix_path')
+[22.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/hook/cmake_prefix_path.ps1'
+[22.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/hook/cmake_prefix_path.dsv'
+[22.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/hook/cmake_prefix_path.sh'
+[22.051s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/lib'
+[22.052s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/bin'
+[22.052s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/lib/pkgconfig/pavbot_imu.pc'
+[22.053s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/lib/python3.10/site-packages'
+[22.054s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/bin'
+[22.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.ps1'
+[22.059s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.dsv'
+[22.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.sh'
+[22.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.bash'
+[22.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.zsh'
+[22.072s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/colcon-core/packages/pavbot_imu)
+[22.075s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pavbot_imu)
+[22.076s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu' for CMake module files
+[22.079s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu' for CMake config files
+[22.081s] Level 1:colcon.colcon_core.shell:create_environment_hook('pavbot_imu', 'cmake_prefix_path')
+[22.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/hook/cmake_prefix_path.ps1'
+[22.084s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/hook/cmake_prefix_path.dsv'
+[22.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/hook/cmake_prefix_path.sh'
+[22.089s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/lib'
+[22.090s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/bin'
+[22.090s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/lib/pkgconfig/pavbot_imu.pc'
+[22.091s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/lib/python3.10/site-packages'
+[22.093s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/bin'
+[22.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.ps1'
+[22.097s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.dsv'
+[22.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.sh'
+[22.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.bash'
+[22.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.zsh'
+[22.110s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/colcon-core/packages/pavbot_imu)
+[22.111s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[22.112s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[22.113s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[22.113s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[22.137s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[22.138s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[22.138s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[22.219s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[22.220s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/local_setup.ps1'
+[22.225s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mrstalford/ros2_ws/src/pavbot_imu/install/_local_setup_util_ps1.py'
+[22.234s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/setup.ps1'
+[22.244s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/local_setup.sh'
+[22.248s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mrstalford/ros2_ws/src/pavbot_imu/install/_local_setup_util_sh.py'
+[22.253s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/setup.sh'
+[22.264s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/local_setup.bash'
+[22.269s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/setup.bash'
+[22.283s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/local_setup.zsh'
+[22.287s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mrstalford/ros2_ws/src/pavbot_imu/install/setup.zsh'

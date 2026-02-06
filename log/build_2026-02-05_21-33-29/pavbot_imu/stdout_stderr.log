@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:17[m[K:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:[m[K In member function ‘[01m[Kstd::optional<double> IMU::readHeading()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:93:30:[m[K [01;31m[Kerror: [m[K‘[01m[Ktoken[m[K’ was not declared in this scope
+   93 |             std::getline(ss, [01;31m[Ktoken[m[K, ',');
+      |                              [01;31m[K^~~~~[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:98:32:[m[K [01;31m[Kerror: [m[K‘[01m[Ktoken[m[K’ was not declared in this scope
+   98 |         if (!(std::getline(ss, [01;31m[Ktoken[m[K, ',') && (roll = std::stod(token), true))) return std::nullopt;
+      |                                [01;31m[K^~~~~[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:99:32:[m[K [01;31m[Kerror: [m[K‘[01m[Ktoken[m[K’ was not declared in this scope
+   99 |         if (!(std::getline(ss, [01;31m[Ktoken[m[K, ',') && (pitch = std::stod(token), true))) return std::nullopt;
+      |                                [01;31m[K^~~~~[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:100:32:[m[K [01;31m[Kerror: [m[K‘[01m[Ktoken[m[K’ was not declared in this scope
+  100 |         if (!(std::getline(ss, [01;31m[Ktoken[m[K, ',') && (yaw = std::stod(token), true))) return std::nullopt;
+      |                                [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,40 @@
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In member function ‘[01m[Kvoid PavbotIMU::update()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:44:23:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand types are ‘[01m[Kstd::optional<double>[m[K’ and ‘[01m[Kdouble[m[K’)
+   44 |     heading = [32m[Kheading[m[K [01;31m[K*[m[K TO_DEG;
+      |               [32m[K~~~~~~~[m[K [01;31m[K^[m[K
+      |               [32m[K|[m[K
+      |               [32m[Kstd::optional<double>[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:44:23:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Koperator*(int, double)[m[K’ (built-in)
+   44 |     heading = heading [01;36m[K*[m[K TO_DEG;
+      |                       [01;36m[K^[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:44:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::optional<double>[m[K’ to ‘[01m[Kint[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[01m[K/usr/include/c++/11/optional:926:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const _Tp& std::optional<_Tp>::operator*() const & [with _Tp = double][m[K’
+  926 |       [01;36m[Koperator[m[K*() const& noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/optional:926:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/usr/include/c++/11/optional:930:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr _Tp& std::optional<_Tp>::operator*() & [with _Tp = double][m[K’
+  930 |       [01;36m[Koperator[m[K*()& noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/optional:930:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/usr/include/c++/11/optional:934:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr _Tp&& std::optional<_Tp>::operator*() && [with _Tp = double][m[K’
+  934 |       [01;36m[Koperator[m[K*()&& noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/optional:934:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/usr/include/c++/11/optional:938:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const _Tp&& std::optional<_Tp>::operator*() const && [with _Tp = double][m[K’
+  938 |       [01;36m[Koperator[m[K*() const&& noexcept
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/optional:938:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

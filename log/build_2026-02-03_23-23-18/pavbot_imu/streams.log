@@ -1,0 +1,11 @@
+[0.072s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.263s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.364s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[10.521s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16[m[K:
+[10.522s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:[m[K In member function ‘[01m[Kstd::optional<double> IMU::parseHeading()[m[K’:
+[10.523s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:112:26:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator!=[m[K’ (operand types are ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<unsigned char>, unsigned char>::value_type[m[K’ {aka ‘[01m[Kunsigned char[m[K’} and ‘[01m[KImuCommand[m[K’)
+[10.523s]   112 |             if (rxBuf[0] != ImuCommand::StartByte) {
+[13.713s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[13.714s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[13.715s] gmake: *** [Makefile:146: all] Error 2
+[13.725s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4

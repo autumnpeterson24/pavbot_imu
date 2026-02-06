@@ -1,0 +1,225 @@
+[0.000000] (-) TimerEvent: {}
+[0.001833] (pavbot_imu) JobQueued: {'identifier': 'pavbot_imu', 'dependencies': OrderedDict()}
+[0.003071] (pavbot_imu) JobStarted: {'identifier': 'pavbot_imu'}
+[0.057446] (pavbot_imu) JobProgress: {'identifier': 'pavbot_imu', 'progress': 'cmake'}
+[0.061648] (pavbot_imu) JobProgress: {'identifier': 'pavbot_imu', 'progress': 'build'}
+[0.065258] (pavbot_imu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu', '--', '-j4', '-l4'], 'cwd': '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mrstalford'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mrstalford'), ('OLDPWD', '/home/mrstalford/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1199'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_imu/install:/home/mrstalford/ros2_ws/install:/home/mrstalford/ros2_ws/src/pavbot_gps/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mrstalford'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mrstalford'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mrstalford-desktop:@/tmp/.ICE-unix/1177,unix/mrstalford-desktop:/tmp/.ICE-unix/1177'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a23612ea_3183_478a_b4c5_d319990dcf66'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8J3NK3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_estop:/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_estop:/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps:/opt/ros/humble')]), 'shell': False}
+[0.098838] (-) TimerEvent: {}
+[0.200024] (-) TimerEvent: {}
+[0.296454] (pavbot_imu) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pavbot_imu\x1b[0m\n'}
+[0.300164] (-) TimerEvent: {}
+[0.399367] (pavbot_imu) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o\x1b[0m\n'}
+[0.400311] (-) TimerEvent: {}
+[0.501168] (-) TimerEvent: {}
+[0.602004] (-) TimerEvent: {}
+[0.702742] (-) TimerEvent: {}
+[0.803679] (-) TimerEvent: {}
+[0.904866] (-) TimerEvent: {}
+[1.005625] (-) TimerEvent: {}
+[1.106388] (-) TimerEvent: {}
+[1.207180] (-) TimerEvent: {}
+[1.307979] (-) TimerEvent: {}
+[1.408730] (-) TimerEvent: {}
+[1.509543] (-) TimerEvent: {}
+[1.610304] (-) TimerEvent: {}
+[1.711141] (-) TimerEvent: {}
+[1.811965] (-) TimerEvent: {}
+[1.912720] (-) TimerEvent: {}
+[2.013482] (-) TimerEvent: {}
+[2.114371] (-) TimerEvent: {}
+[2.215313] (-) TimerEvent: {}
+[2.316139] (-) TimerEvent: {}
+[2.417060] (-) TimerEvent: {}
+[2.517932] (-) TimerEvent: {}
+[2.618922] (-) TimerEvent: {}
+[2.719818] (-) TimerEvent: {}
+[2.820872] (-) TimerEvent: {}
+[2.921819] (-) TimerEvent: {}
+[3.022657] (-) TimerEvent: {}
+[3.123577] (-) TimerEvent: {}
+[3.224425] (-) TimerEvent: {}
+[3.325245] (-) TimerEvent: {}
+[3.426095] (-) TimerEvent: {}
+[3.527066] (-) TimerEvent: {}
+[3.627962] (-) TimerEvent: {}
+[3.728826] (-) TimerEvent: {}
+[3.829657] (-) TimerEvent: {}
+[3.930599] (-) TimerEvent: {}
+[4.031539] (-) TimerEvent: {}
+[4.132411] (-) TimerEvent: {}
+[4.233357] (-) TimerEvent: {}
+[4.334206] (-) TimerEvent: {}
+[4.435080] (-) TimerEvent: {}
+[4.536084] (-) TimerEvent: {}
+[4.636946] (-) TimerEvent: {}
+[4.737778] (-) TimerEvent: {}
+[4.838762] (-) TimerEvent: {}
+[4.939686] (-) TimerEvent: {}
+[5.040531] (-) TimerEvent: {}
+[5.141453] (-) TimerEvent: {}
+[5.242330] (-) TimerEvent: {}
+[5.343183] (-) TimerEvent: {}
+[5.444060] (-) TimerEvent: {}
+[5.544911] (-) TimerEvent: {}
+[5.645835] (-) TimerEvent: {}
+[5.746687] (-) TimerEvent: {}
+[5.847630] (-) TimerEvent: {}
+[5.948575] (-) TimerEvent: {}
+[6.049480] (-) TimerEvent: {}
+[6.150451] (-) TimerEvent: {}
+[6.251362] (-) TimerEvent: {}
+[6.352190] (-) TimerEvent: {}
+[6.453035] (-) TimerEvent: {}
+[6.553901] (-) TimerEvent: {}
+[6.654797] (-) TimerEvent: {}
+[6.755686] (-) TimerEvent: {}
+[6.856559] (-) TimerEvent: {}
+[6.957454] (-) TimerEvent: {}
+[7.058305] (-) TimerEvent: {}
+[7.159214] (-) TimerEvent: {}
+[7.260065] (-) TimerEvent: {}
+[7.360980] (-) TimerEvent: {}
+[7.461875] (-) TimerEvent: {}
+[7.562971] (-) TimerEvent: {}
+[7.663895] (-) TimerEvent: {}
+[7.764999] (-) TimerEvent: {}
+[7.866017] (-) TimerEvent: {}
+[7.966928] (-) TimerEvent: {}
+[8.067782] (-) TimerEvent: {}
+[8.168652] (-) TimerEvent: {}
+[8.269516] (-) TimerEvent: {}
+[8.370376] (-) TimerEvent: {}
+[8.471271] (-) TimerEvent: {}
+[8.572186] (-) TimerEvent: {}
+[8.673140] (-) TimerEvent: {}
+[8.774012] (-) TimerEvent: {}
+[8.874920] (-) TimerEvent: {}
+[8.975814] (-) TimerEvent: {}
+[9.076669] (-) TimerEvent: {}
+[9.177517] (-) TimerEvent: {}
+[9.278396] (-) TimerEvent: {}
+[9.379379] (-) TimerEvent: {}
+[9.480181] (-) TimerEvent: {}
+[9.581029] (-) TimerEvent: {}
+[9.681997] (-) TimerEvent: {}
+[9.782929] (-) TimerEvent: {}
+[9.883822] (-) TimerEvent: {}
+[9.984694] (-) TimerEvent: {}
+[10.085565] (-) TimerEvent: {}
+[10.186468] (-) TimerEvent: {}
+[10.287392] (-) TimerEvent: {}
+[10.388336] (-) TimerEvent: {}
+[10.489235] (-) TimerEvent: {}
+[10.590088] (-) TimerEvent: {}
+[10.626243] (pavbot_imu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:13\x1b[m\x1b[K,\n'}
+[10.627351] (pavbot_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16\x1b[m\x1b[K:\n'}
+[10.627763] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:8:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[10.628077] (pavbot_imu) StderrLine: {'line': b'    8 |     StartByte = 0xF9\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[10.628432] (pavbot_imu) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.628837] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:6:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.629243] (pavbot_imu) StderrLine: {'line': b'    6 | enum class ImuCommand : uint8_t \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[10.629675] (pavbot_imu) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[10.633012] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:9:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KResponseMask\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[10.634110] (pavbot_imu) StderrLine: {'line': b'    9 |     \x1b[01;31m\x1b[KResponseMask\x1b[m\x1b[K = 0x80;\n'}
+[10.635576] (pavbot_imu) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.641053] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:12:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGetEulerAngles\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[10.642001] (pavbot_imu) StderrLine: {'line': b'   12 |     \x1b[01;31m\x1b[KGetEulerAngles\x1b[m\x1b[K = 0x01,\n'}
+[10.642493] (pavbot_imu) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.643133] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:17:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[10.643705] (pavbot_imu) StderrLine: {'line': b'   17 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[10.644139] (pavbot_imu) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.644600] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:46:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after class definition\n'}
+[10.645009] (pavbot_imu) StderrLine: {'line': b'   46 | }\n'}
+[10.645572] (pavbot_imu) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.646074] (pavbot_imu) StderrLine: {'line': b'      |  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[10.652319] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> > ImuPacketBuilder::build(ImuCommand, std::vector<unsigned int>)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.652869] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:24:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned int>::push_back(ImuCommand)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.653235] (pavbot_imu) StderrLine: {'line': b'   24 |         \x1b[01;31m\x1b[Kpacket.push_back(ImuCommand::StartByte)\x1b[m\x1b[K;\n'}
+[10.653513] (pavbot_imu) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.659749] (pavbot_imu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[10.660677] (pavbot_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[10.661164] (pavbot_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[10.661630] (pavbot_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[10.662061] (pavbot_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[10.662565] (pavbot_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[10.663129] (pavbot_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.664221] (pavbot_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[10.664705] (pavbot_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11\x1b[m\x1b[K:\n'}
+[10.665174] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1187:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = unsigned int; _Alloc = std::allocator<unsigned int>; std::vector<_Tp, _Alloc>::value_type = unsigned int]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.665742] (pavbot_imu) StderrLine: {'line': b' 1187 |       \x1b[01;36m\x1b[Kpush_back\x1b[m\x1b[K(const value_type& __x)\n'}
+[10.666221] (pavbot_imu) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.666672] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1187:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KImuCommand\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst value_type&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[10.667327] (pavbot_imu) StderrLine: {'line': b' 1187 |       push_back(\x1b[01;36m\x1b[Kconst value_type& __x\x1b[m\x1b[K)\n'}
+[10.667767] (pavbot_imu) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[10.668182] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1203:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = unsigned int; _Alloc = std::allocator<unsigned int>; std::vector<_Tp, _Alloc>::value_type = unsigned int]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.668882] (pavbot_imu) StderrLine: {'line': b' 1203 |       \x1b[01;36m\x1b[Kpush_back\x1b[m\x1b[K(value_type&& __x)\n'}
+[10.669396] (pavbot_imu) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.669997] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1203:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KImuCommand\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned int>::value_type&&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int&&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[10.670645] (pavbot_imu) StderrLine: {'line': b' 1203 |       push_back(\x1b[01;36m\x1b[Kvalue_type&& __x\x1b[m\x1b[K)\n'}
+[10.671251] (pavbot_imu) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[10.671781] (pavbot_imu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:13\x1b[m\x1b[K,\n'}
+[10.672292] (pavbot_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16\x1b[m\x1b[K:\n'}
+[10.672779] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:30:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[Kunsigned int\x1b[m\x1b[K,allocator<\x1b[01;32m\x1b[Kunsigned int\x1b[m\x1b[K>>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[Kunsigned char\x1b[m\x1b[K,allocator<\x1b[01;32m\x1b[Kunsigned char\x1b[m\x1b[K>>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.673270] (pavbot_imu) StderrLine: {'line': b'   30 |         packet.push_back(checksum(\x1b[01;31m\x1b[Kpacket\x1b[m\x1b[K));\n'}
+[10.674323] (pavbot_imu) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.674848] (pavbot_imu) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[10.675483] (pavbot_imu) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[Kvector<unsigned int,allocator<unsigned int>>\x1b[m\x1b[K\n'}
+[10.675988] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:36:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[Kuint8_t ImuPacketBuilder::checksum(std::vector<unsigned char, std::allocator<unsigned char> >)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.676498] (pavbot_imu) StderrLine: {'line': b'   36 | nt8_t checksum(\x1b[01;36m\x1b[Kstd::vector<uint8_t> packet\x1b[m\x1b[K) {\n'}
+[10.676994] (pavbot_imu) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[10.677482] (pavbot_imu) StderrLine: {'line': b'\n'}
+[10.677961] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:32:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcould not convert \xe2\x80\x98\x1b[01m\x1b[Kpacket\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[Kunsigned int\x1b[m\x1b[K,allocator<\x1b[01;32m\x1b[Kunsigned int\x1b[m\x1b[K>>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[Kunsigned char\x1b[m\x1b[K,allocator<\x1b[01;32m\x1b[Kunsigned char\x1b[m\x1b[K>>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.678492] (pavbot_imu) StderrLine: {'line': b'   32 |         return \x1b[01;31m\x1b[Kpacket\x1b[m\x1b[K;\n'}
+[10.679096] (pavbot_imu) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.679604] (pavbot_imu) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[10.680090] (pavbot_imu) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[Kvector<unsigned int,allocator<unsigned int>>\x1b[m\x1b[K\n'}
+[10.680593] (pavbot_imu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16\x1b[m\x1b[K:\n'}
+[10.681088] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid IMU::enableCompass()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.681659] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:74:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSetCompassEnabled\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KImuCommand\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.682248] (pavbot_imu) StderrLine: {'line': b'   74 | uPacketBuilder::build(ImuCommand::\x1b[01;31m\x1b[KSetCompassEnabled\x1b[m\x1b[K, payload));\n'}
+[10.682674] (pavbot_imu) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.683134] (pavbot_imu) StderrLine: {'line': b'\n'}
+[10.683580] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid IMU::requestHeading()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.684050] (pavbot_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:78:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGetEulerAngles\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KImuCommand\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.684482] (pavbot_imu) StderrLine: {'line': b'   78 | uPacketBuilder::build(ImuCommand::\x1b[01;31m\x1b[KGetEulerAngles\x1b[m\x1b[K));\n'}
+[10.684865] (pavbot_imu) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.685241] (pavbot_imu) StderrLine: {'line': b'\n'}
+[10.690325] (-) TimerEvent: {}
+[10.791616] (-) TimerEvent: {}
+[10.892650] (-) TimerEvent: {}
+[10.993793] (-) TimerEvent: {}
+[11.094910] (-) TimerEvent: {}
+[11.195784] (-) TimerEvent: {}
+[11.296593] (-) TimerEvent: {}
+[11.397432] (-) TimerEvent: {}
+[11.498336] (-) TimerEvent: {}
+[11.599213] (-) TimerEvent: {}
+[11.700030] (-) TimerEvent: {}
+[11.800885] (-) TimerEvent: {}
+[11.901752] (-) TimerEvent: {}
+[12.002634] (-) TimerEvent: {}
+[12.103493] (-) TimerEvent: {}
+[12.204320] (-) TimerEvent: {}
+[12.305249] (-) TimerEvent: {}
+[12.406094] (-) TimerEvent: {}
+[12.506987] (-) TimerEvent: {}
+[12.607799] (-) TimerEvent: {}
+[12.708632] (-) TimerEvent: {}
+[12.809578] (-) TimerEvent: {}
+[12.910481] (-) TimerEvent: {}
+[13.011349] (-) TimerEvent: {}
+[13.112168] (-) TimerEvent: {}
+[13.212989] (-) TimerEvent: {}
+[13.313898] (-) TimerEvent: {}
+[13.414796] (-) TimerEvent: {}
+[13.516125] (-) TimerEvent: {}
+[13.617009] (-) TimerEvent: {}
+[13.717842] (-) TimerEvent: {}
+[13.818695] (-) TimerEvent: {}
+[13.886275] (pavbot_imu) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1\n'}
+[13.887709] (pavbot_imu) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2\n'}
+[13.888353] (pavbot_imu) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.896255] (pavbot_imu) CommandEnded: {'returncode': 2}
+[13.919525] (-) TimerEvent: {}
+[13.959469] (pavbot_imu) JobEnded: {'identifier': 'pavbot_imu', 'rc': 2}
+[13.971151] (-) EventReactorShutdown: {}

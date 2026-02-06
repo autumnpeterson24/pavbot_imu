@@ -1,0 +1,23 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:17[m[K:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:[m[K In member function ‘[01m[Kbool IMU::writeCommand(std::string)[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:92:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kpacket[m[K’ was not declared in this scope
+   92 | ize_t bytesWritten = ::write(this->fd, c, [01;31m[Kpacket[m[K.size());
+      |                                           [01;31m[K^~~~~~[m[K
+
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:[m[K In member function ‘[01m[Kstd::optional<double> IMU::parseHeading()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:109:50:[m[K [01;31m[Kerror: [m[K‘[01m[KImuCommand[m[K’ has not been declared
+  109 |      if (rxBuf[0] != static_cast<uint8_t>([01;31m[KImuCommand[m[K::StartByte)) {
+      |                                           [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:122:44:[m[K [01;31m[Kerror: [m[K‘[01m[KImuCommand[m[K’ has not been declared
+  122 |            if (c == (static_cast<uint8_t>([01;31m[KImuCommand[m[K::GetEulerAngles)
+      |                                           [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:123:44:[m[K [01;31m[Kerror: [m[K‘[01m[KImuCommand[m[K’ has not been declared
+  123 |                    | static_cast<uint8_t>([01;31m[KImuCommand[m[K::ResponseMask))) {
+      |                                           [01;31m[K^~~~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

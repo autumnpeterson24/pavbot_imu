@@ -8,6 +8,7 @@
 #include <iostream>
 #include <cerrno>
 #include <utility>
+#include <optional>
 
 class IMU {
   public:
@@ -23,7 +24,7 @@ class IMU {
     }
 
     bool open() {
-        fd = ::open(port.c_str(), O_RDONLY | O_NOCTTY);
+        fd = ::open(port.c_str(), O_RDWR | O_NOCTTY | O_SYNC);
         if (fd < 0) {
             return false;
         } 
@@ -43,32 +44,65 @@ class IMU {
 
         // Raw mode (?)
         tty.c_lflag &= ~(ICANON | ECHO | ECHOE | ISIG);
-        tty.c_lflag &= ~(IXON | IXOFF | IXANY);
+        tty.c_iflag &= ~(IXON | IXOFF | IXANY);
         tty.c_lflag &= ~OPOST;
 
         // Non-blocking
         tty.c_cc[VMIN] = 0; // 0 byte casew
-        tty.c_cc[VTIME] = timeout_ms / 100; // 1 second?
+        tty.c_cc[VTIME] = timeout_ms / 100;
 
         tcsetattr(fd, TCSANOW, &tty);
         return true;
     }
 
-    std::string readSerial() {
-        char buf[256];
-    
-        int n = read(this->fd, buf, sizeof(buf) - 1);
-        if (n <= 0) {
-            return {};
-        }
-
-        buf[n] = '\0';
-        return std::string(buf);
+    bool enableCompass() {
+        return writeCommand(":26,1\n");
     }
 
-    int readHeading() {
-        // Returns the heading as degrees
-        // counter-clockwise from north
+    bool queryData() {
+        tcflush(this->fd, TCIFLUSH);
+        return writeCommand(":01\n");
+    }
+
+    std::optional<std::string> readLine() {
+        static std::string buf;
+        char c;
+
+        while (true) {
+            ssize_t n = ::read(this->fd, &c, 1);
+            if (n <= 0) {
+                return std::nullopt;
+            }
+
+            if (c == '\n') {
+                std::string line = buf;
+                buf.clear();
+                return line;
+            }
+
+            buf.push_back(c);
+        }
+    }
+
+    std::optional<double> readHeading() {
+        auto line = readLine();
+        if (!line) return std::nullopt;
+
+        // Some packet parsing lexer-style
+        std::stringstream ss(*line);
+        std::string token;
+
+        if (line->find("EULER") != std::string::npos) {
+            std::getline(ss, token, ',');
+        }
+
+        double roll, pitch, yaw;
+
+        if (!(std::getline(ss, token, ',') && (roll = std::stod(token), true))) return std::nullopt;
+        if (!(std::getline(ss, token, ',') && (yaw = std::stod(token), true))) return std::nullopt;
+        if (!(std::getline(ss, token, ',') && (pitch = std::stod(token), true))) return std::nullopt;
+    
+        return yaw;
     }
 
     bool close() {
@@ -77,7 +111,15 @@ class IMU {
 
   private:
     int fd;
+    std::vector<uint8_t> rxBuf; // For stitching
     std::string port;
     speed_t baud;
     int timeout_ms;
+
+    bool writeCommand(std::string c) {
+        ssize_t n = ::write(this->fd, c.c_str(), c.size());
+        tcdrain(fd);
+        
+        return n == static_cast<ssize_t>(c.size());
+    }
 };

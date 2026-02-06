@@ -715,6 +715,7 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp \
+  /usr/include/c++/11/math.h \
   ../../src/imu.h \
   /usr/include/fcntl.h \
   /usr/include/aarch64-linux-gnu/bits/fcntl.h \
@@ -1800,6 +1801,8 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
+
+/usr/include/c++/11/math.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 

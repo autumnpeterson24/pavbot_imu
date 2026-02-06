@@ -1,19 +1,23 @@
 /*
-E-Stop Node for Pavbot
+IMU Node for Pavbot
 author: Michael Stalford
 
 Subscribes to:
  - Nothing
 
  Publishes:
-  - sensors/imu/heading: Float32 as degrees between 0 and 359 COUNTER-clockwise from North
+  - sensors/imu/heading: Float32 as degrees between 0 and 359 clockwise from North
 */
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/bool.hpp>
 #include <std_msgs/msg/float32.hpp>
+#include <math.h>
 
 // For IMU
 #include "imu.h"
+
+#define TO_DEG 180/M_PI
+#define DEG_OFFSET 0
 
 class PavbotIMU : public rclcpp::Node
 {
@@ -32,20 +36,18 @@ class PavbotIMU : public rclcpp::Node
     // IMU
     IMU imu;
 
-  // Heading to publish
-  double heading;
-
   // Function using in wall timer to update at a constant hertz
   void update() {
     std_msgs::msg::Float32 msg;
 
-    heading = 5;
-    msg.data = static_cast<float>(heading);  
-    imu_pub->publish(msg);
-  }
+    imu.queryData();
+    auto heading = imu.readHeading(); // Deg
+    if (!heading) return;
 
-  void getSerial() {
-    // Magic
+    float headingDeg = (360 - ((static_cast<int>(heading.value() * TO_DEG) - DEG_OFFSET) % 360)) % 360;
+    msg.data = headingDeg;  
+    RCLCPP_INFO(get_logger(), "IMU value:   %f", msg.data);
+    imu_pub->publish(msg);
   }
 
 public:
@@ -57,12 +59,11 @@ public:
     timeout_ms = declare_parameter<int>("timeout_ms", 500);
 
     // Publishers ------------------
-    imu_pub = create_publisher<std_msgs::msg::Float32>("/sensors/imu", rclcpp::QoS(1).transient_local() // a queue depth of 1 to keep the latest value :)
+    imu_pub = create_publisher<std_msgs::msg::Float32>("/sensors/imu/heading", rclcpp::QoS(1).transient_local() // a queue depth of 1 to keep the latest value :)
     );
 
-
     // timers ----------------
-    timer = create_wall_timer( std::chrono::milliseconds(500), std::bind(&PavbotIMU::update, this) // periodic timer for constant update
+    timer = create_wall_timer( std::chrono::milliseconds(50), std::bind(&PavbotIMU::update, this) // periodic timer for constant update
     );
 
     // Logging to the screen when the node is created to make sure it is there :)
@@ -74,13 +75,13 @@ public:
     if (imu.open()) {
       // Success
       RCLCPP_INFO(get_logger(), "Successful connection to IMU. Awaiting data packets...");
+      imu.enableCompass();
     } else {
       // Failure
       RCLCPP_INFO(get_logger(), "Failure to connect to IMU :: %s", strerror(errno));
     }
   }
 };
-
 
 int main(int argc, char **argv) {
 // SPINNING UP THE ROS NODE

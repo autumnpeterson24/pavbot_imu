@@ -1,0 +1,48 @@
+[0.072s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.265s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.368s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[11.656s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:13[m[K,
+[11.656s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16[m[K:
+[11.657s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:[m[K In static member function ‘[01m[Kstatic std::vector<unsigned char, std::allocator<unsigned char> > ImuPacketBuilder::build(ImuCommand, const std::vector<unsigned int>&)[m[K’:
+[11.663s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:24:25:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >::push_back(ImuCommand)[m[K’
+[11.665s]    24 |         [01;31m[Kpacket.push_back(ImuCommand::StartByte)[m[K;
+[11.666s]       |         [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.667s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[11.668s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[11.669s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[11.671s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[11.677s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[11.680s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.681s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.682s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.683s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:11[m[K:
+[11.684s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1187:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>; std::vector<_Tp, _Alloc>::value_type = unsigned char][m[K’
+[11.686s]  1187 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+[11.687s]       |       [01;36m[K^~~~~~~~~[m[K
+[11.688s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1187:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KImuCommand[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst unsigned char&[m[K’}
+[11.689s]  1187 |       push_back([01;36m[Kconst value_type& __x[m[K)
+[11.690s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[11.691s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1203:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>; std::vector<_Tp, _Alloc>::value_type = unsigned char][m[K’
+[11.692s]  1203 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+[11.696s]       |       [01;36m[K^~~~~~~~~[m[K
+[11.697s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1203:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KImuCommand[m[K’ to ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >::value_type&&[m[K’ {aka ‘[01m[Kunsigned char&&[m[K’}
+[11.698s]  1203 |       push_back([01;36m[Kvalue_type&& __x[m[K)
+[11.700s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[11.701s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16[m[K:
+[11.711s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:[m[K In member function ‘[01m[Kvoid IMU::enableCompass()[m[K’:
+[11.713s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:66:77:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’ to ‘[01m[Kconst std::vector<unsigned int>&[m[K’
+[11.714s]    66 | ild(ImuCommand::SetCompassEnabled, [01;31m[Kpayload[m[K));
+[11.715s]       |                                    [01;31m[K^~~~~~~[m[K
+[11.715s]       |                                    [01;31m[K|[m[K
+[11.716s]       |                                    [01;31m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K
+[11.717s] 
+[11.728s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:13[m[K,
+[11.729s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16[m[K:
+[11.730s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu_packet_builder.h:21:82:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kstatic std::vector<unsigned char, std::allocator<unsigned char> > ImuPacketBuilder::build(ImuCommand, const std::vector<unsigned int>&)[m[K’
+[11.731s]    21 | d c, [01;36m[Kconst std::vector<uint32_t>& payload = {}[m[K) {
+[11.731s]       |      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[11.732s] 
+[16.871s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[16.872s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[16.873s] gmake: *** [Makefile:146: all] Error 2
+[16.881s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4

@@ -1,0 +1,11 @@
+[0.066s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.264s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.368s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[10.727s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:16[m[K:
+[10.727s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/imu.h:16:25:[m[K [01;31m[Kerror: [m[Kenumerator value ‘[01m[K1070084456744[m[K’ is outside the range of underlying type ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’}
+[10.728s]    16 |     SetCompassEnabled = [01;31m[K0xF926010128[m[K,
+[10.728s]       |                         [01;31m[K^~~~~~~~~~~~[m[K
+[13.858s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[13.859s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[13.859s] gmake: *** [Makefile:146: all] Error 2
+[13.866s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
