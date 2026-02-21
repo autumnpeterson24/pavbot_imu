@@ -59,8 +59,7 @@ public:
     timeout_ms = declare_parameter<int>("timeout_ms", 500);
 
     // Publishers ------------------
-    imu_pub = create_publisher<std_msgs::msg::Float32>("/sensors/imu/heading", rclcpp::QoS(1).transient_local() // a queue depth of 1 to keep the latest value :)
-    );
+    imu_pub = create_publisher<std_msgs::msg::Float32>("/sensors/imu/heading", rclcpp::SensorDataQoS());
 
     // timers ----------------
     timer = create_wall_timer( std::chrono::milliseconds(50), std::bind(&PavbotIMU::update, this) // periodic timer for constant update
