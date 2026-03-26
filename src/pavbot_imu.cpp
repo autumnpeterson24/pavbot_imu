@@ -1,22 +1,30 @@
-/*
-IMU Node for Pavbot
-author: Michael Stalford
-
-Subscribes to:
- - Nothing
-
- Publishes:
-  - sensors/imu/heading: Float32 as degrees between 0 and 359 clockwise from North
-*/
+// O== Metadata ===================================================
+// | Author: Michael Stalford for PAVBot Capstone Team, 2026
+// | Purpose: Act as interfacing class to get navigation data from
+// |          the Yost 3-Space IMU v1.0 using ASCII commands.
+// | Version:
+// |   3/26/26     Michael Stalford     Born anew to allow for all
+// |                                    modes beyond heading to be
+// |                                    collected
+// O== To-Do ======================================================
+// |
+// O== Notes ======================================================
+// | Subscribes to: 
+// | - Nothing
+// | 
+// | Publishes:
+// | - sensors/imu/heading: Float32
+// |                        [0, 360) CW from true North
+// | - ??? CHECK WITH AUTUMN FOR HOW SHE NEEDS THIS DONE!!!
+// |                        
+// O===============================================================
 #include <rclcpp/rclcpp.hpp>
-#include <std_msgs/msg/bool.hpp>
 #include <std_msgs/msg/float32.hpp>
 #include <math.h>
 
 // For IMU
 #include "imu.h"
 
-#define TO_DEG 180/M_PI
 #define DEG_OFFSET 0
 
 class PavbotIMU : public rclcpp::Node
@@ -38,16 +46,16 @@ class PavbotIMU : public rclcpp::Node
 
   // Function using in wall timer to update at a constant hertz
   void update() {
-    std_msgs::msg::Float32 msg;
+    auto data = imu.readAll();
+    if (!data) return;
 
-    imu.queryData();
-    auto heading = imu.readHeading(); // Deg
-    if (!heading) return;
-
-    float headingDeg = (360 - ((static_cast<int>(heading.value() * TO_DEG) - DEG_OFFSET) % 360)) % 360;
-    msg.data = headingDeg;  
-    RCLCPP_INFO(get_logger(), "IMU value:   %f", msg.data);
-    imu_pub->publish(msg);
+    // Heading
+    std_msgs::msg::Float32 headingMsg;
+    headingMsg.data = static_cast<float>(data->heading);
+    RCLCPP_INFO(get_logger(), "Heading: %.1f deg", headingMsg.data);
+    imu_pub->publish(headingMsg);
+    
+    // Others ??? ASK AUTUMN FORMAT AND NEED TO DO SOME PROCESSING MYSELF!!!
   }
 
 public:
@@ -60,6 +68,7 @@ public:
 
     // Publishers ------------------
     imu_pub = create_publisher<std_msgs::msg::Float32>("/sensors/imu/heading", rclcpp::SensorDataQoS());
+    //??
 
     // timers ----------------
     timer = create_wall_timer( std::chrono::milliseconds(50), std::bind(&PavbotIMU::update, this) // periodic timer for constant update
