@@ -1,0 +1,6 @@
+[0.071s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.263s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.277s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:170: CMakeFiles/pavbot_imu.dir/depend] Interrupt
+[0.277s] gmake[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/pavbot_imu.dir/all] Interrupt
+[0.278s] gmake: *** [Makefile:146: all] Interrupt
+[0.284s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4

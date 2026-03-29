@@ -1,0 +1,11 @@
+[0.073s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.266s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.371s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[1.965s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:23:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/imu.hpp: No such file or directory
+[1.966s]    23 | #include [01;31m[K<sensor_msgs/msg/imu.hpp>[m[K
+[1.967s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.968s] compilation terminated.
+[1.982s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[1.983s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[1.984s] gmake: *** [Makefile:146: all] Error 2
+[1.993s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4

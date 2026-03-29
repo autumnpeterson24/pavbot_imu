@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:170: CMakeFiles/pavbot_imu.dir/depend] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/pavbot_imu.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

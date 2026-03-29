@@ -15,11 +15,12 @@
 // | Publishes:
 // | - sensors/imu/heading: Float32
 // |                        [0, 360) CW from true North
-// | - ??? CHECK WITH AUTUMN FOR HOW SHE NEEDS THIS DONE!!!
+// | - sensors/imu/data:    IMU
 // |                        
 // O===============================================================
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/float32.hpp>
+#include <sensor_msgs/msg/imu.hpp>
 #include <math.h>
 
 // For IMU
@@ -36,7 +37,8 @@ class PavbotIMU : public rclcpp::Node
   int timeout_ms;
 
   // declare the publishers here
-  rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr imu_pub;
+  rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr imu_heading_pub;
+  rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr imu_data_pub;
 
   //delcare all timers here
   rclcpp::TimerBase::SharedPtr timer;
@@ -46,16 +48,47 @@ class PavbotIMU : public rclcpp::Node
 
   // Function using in wall timer to update at a constant hertz
   void update() {
-    auto data = imu.readAll();
-    if (!data) return;
+    auto h = imu.readHeading();
+    if (!h) return;
+
+    auto p = imu.readPosition();
+    auto v = imu.readVelocity();
+    if (!p || !v) return;
 
     // Heading
     std_msgs::msg::Float32 headingMsg;
-    headingMsg.data = static_cast<float>(data->heading);
-    RCLCPP_INFO(get_logger(), "Heading: %.1f deg", headingMsg.data);
-    imu_pub->publish(headingMsg);
     
-    // Others ??? ASK AUTUMN FORMAT AND NEED TO DO SOME PROCESSING MYSELF!!!
+    // Rest of data
+    sensor_msgs::msg::Imu dataMsg;
+    dataMsg.header.stamp = get_clock()->now();
+    dataMsg.header.frame_id = "imu_link";
+
+    dataMsg.orientation.x = p->x;
+    dataMsg.orientation.y = p->y;
+    dataMsg.orientation.z = p->z;
+    dataMsg.orientation.w = p->w;
+
+    dataMsg.angular_velocity.x = v->x;
+    dataMsg.angular_velocity.y = v->y;
+    dataMsg.angular_velocity.z = v->z;
+
+    dataMsg.orientation_covariance[0] = -1;
+    dataMsg.angular_velocity_covariance[0] = -1;
+    dataMsg.linear_acceleration_covariance[0] = -1;
+
+    headingMsg.data = static_cast<float>(h.value());
+    RCLCPP_INFO(get_logger(), "\n"
+    "Heading:          %4.1f degrees\n"
+    "Position:         %4.1f, %4.1f, %4.1f, %4.1f\n"
+    "Angular Velocity: %4.1f, %4.1f, %4.1f\n", headingMsg.data,
+    dataMsg.orientation.x, dataMsg.orientation.y,
+    dataMsg.orientation.z, dataMsg.orientation.w,
+    dataMsg.angular_velocity.x, dataMsg.angular_velocity.y,
+    dataMsg.angular_velocity.z);
+    
+    // Publish
+    imu_heading_pub->publish(headingMsg);
+    imu_data_pub->publish(dataMsg);
   }
 
 public:
@@ -67,8 +100,8 @@ public:
     timeout_ms = declare_parameter<int>("timeout_ms", 500);
 
     // Publishers ------------------
-    imu_pub = create_publisher<std_msgs::msg::Float32>("/sensors/imu/heading", rclcpp::SensorDataQoS());
-    //??
+    imu_heading_pub = create_publisher<std_msgs::msg::Float32>("/sensors/imu/heading", rclcpp::SensorDataQoS());
+    imu_data_pub = create_publisher<sensor_msgs::msg::Imu>("/sensors/imu/data", rclcpp::SensorDataQoS());
 
     // timers ----------------
     timer = create_wall_timer( std::chrono::milliseconds(50), std::bind(&PavbotIMU::update, this) // periodic timer for constant update
@@ -84,6 +117,7 @@ public:
       // Success
       RCLCPP_INFO(get_logger(), "Successful connection to IMU. Awaiting data packets...");
       imu.enableCompass();
+      imu.tare();
     } else {
       // Failure
       RCLCPP_INFO(get_logger(), "Failure to connect to IMU :: %s", strerror(errno));

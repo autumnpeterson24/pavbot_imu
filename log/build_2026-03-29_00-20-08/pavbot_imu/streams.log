@@ -1,0 +1,28 @@
+[0.072s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.267s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.369s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[21.032s] [100%] [32m[1mLinking CXX executable pavbot_imu[0m
+[22.162s] [100%] Built target pavbot_imu
+[22.204s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[22.254s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu
+[22.282s] -- Install configuration: ""
+[22.283s] -- Installing: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/lib/pavbot_imu/pavbot_imu
+[22.298s] -- Set runtime path of "/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/lib/pavbot_imu/pavbot_imu" to ""
+[22.299s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/launch
+[22.299s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/launch/imu.launch.py
+[22.300s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/ament_index/resource_index/package_run_dependencies/pavbot_imu
+[22.300s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/ament_index/resource_index/parent_prefix_path/pavbot_imu
+[22.301s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/environment/ament_prefix_path.sh
+[22.302s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/environment/ament_prefix_path.dsv
+[22.302s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/environment/path.sh
+[22.303s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/environment/path.dsv
+[22.303s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/local_setup.bash
+[22.304s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/local_setup.sh
+[22.304s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/local_setup.zsh
+[22.304s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/local_setup.dsv
+[22.305s] -- Installing: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.dsv
+[22.305s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/ament_index/resource_index/packages/pavbot_imu
+[22.306s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/cmake/pavbot_imuConfig.cmake
+[22.306s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/cmake/pavbot_imuConfig-version.cmake
+[22.307s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.xml
+[22.313s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu

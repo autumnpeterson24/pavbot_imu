@@ -1,0 +1,32 @@
+[0.069s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.265s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.368s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[11.093s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In member function ‘[01m[Kvoid PavbotIMU::update()[m[K’:
+[11.094s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:71:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Quaternion>[m[K’ has no member named ‘[01m[Kx[m[K’
+[11.095s]    71 |     dataMsg.orientation.x = p.[01;31m[Kx[m[K;
+[11.095s]       |                               [01;31m[K^[m[K
+[11.095s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:72:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Quaternion>[m[K’ has no member named ‘[01m[Ky[m[K’
+[11.096s]    72 |     dataMsg.orientation.y = p.[01;31m[Ky[m[K;
+[11.096s]       |                               [01;31m[K^[m[K
+[11.097s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:73:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Quaternion>[m[K’ has no member named ‘[01m[Kz[m[K’
+[11.097s]    73 |     dataMsg.orientation.z = p.[01;31m[Kz[m[K;
+[11.097s]       |                               [01;31m[K^[m[K
+[11.098s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:74:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Quaternion>[m[K’ has no member named ‘[01m[Kw[m[K’
+[11.098s]    74 |     dataMsg.orientation.w = p.[01;31m[Kw[m[K;
+[11.099s]       |                               [01;31m[K^[m[K
+[11.099s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:76:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Vector3>[m[K’ has no member named ‘[01m[Kx[m[K’
+[11.100s]    76 |     dataMsg.angular_velocity.x = v.[01;31m[Kx[m[K;
+[11.100s]       |                                    [01;31m[K^[m[K
+[11.100s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:77:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Vector3>[m[K’ has no member named ‘[01m[Ky[m[K’
+[11.101s]    77 |     dataMsg.angular_velocity.y = v.[01;31m[Ky[m[K;
+[11.101s]       |                                    [01;31m[K^[m[K
+[11.102s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:78:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Vector3>[m[K’ has no member named ‘[01m[Kz[m[K’
+[11.102s]    78 |     dataMsg.angular_velocity.z = v.[01;31m[Kz[m[K;
+[11.103s]       |                                    [01;31m[K^[m[K
+[11.103s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:84:23:[m[K [01;31m[Kerror: [m[Kinvalid ‘[01m[Kstatic_cast[m[K’ from type ‘[01m[Kstd::optional<double>[m[K’ to type ‘[01m[Kfloat[m[K’
+[11.104s]    84 |     headingMsg.data = [01;31m[Kstatic_cast<float>(h)[m[K;
+[11.104s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[14.824s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[14.824s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[14.825s] gmake: *** [Makefile:146: all] Error 2
+[14.833s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4

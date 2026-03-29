@@ -1,0 +1,258 @@
+[0.000000] (-) TimerEvent: {}
+[0.001054] (pavbot_imu) JobQueued: {'identifier': 'pavbot_imu', 'dependencies': OrderedDict()}
+[0.001961] (pavbot_imu) JobStarted: {'identifier': 'pavbot_imu'}
+[0.053668] (pavbot_imu) JobProgress: {'identifier': 'pavbot_imu', 'progress': 'cmake'}
+[0.057233] (pavbot_imu) JobProgress: {'identifier': 'pavbot_imu', 'progress': 'build'}
+[0.060699] (pavbot_imu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu', '--', '-j4', '-l4'], 'cwd': '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mrstalford'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mrstalford'), ('OLDPWD', '/home/mrstalford'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1177'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_imu/install:/home/mrstalford/ros2_ws/install:/home/mrstalford/ros2_ws/src/pavbot_gps/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mrstalford'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mrstalford'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mrstalford-desktop:@/tmp/.ICE-unix/1151,unix/mrstalford-desktop:/tmp/.ICE-unix/1151'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6c015b3b_adac_465f_b5f6_b01aaae11ce5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.5UP3J3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.124'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_estop:/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_estop:/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps:/opt/ros/humble')]), 'shell': False}
+[0.099137] (-) TimerEvent: {}
+[0.199930] (-) TimerEvent: {}
+[0.268616] (pavbot_imu) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pavbot_imu\x1b[0m\n'}
+[0.300098] (-) TimerEvent: {}
+[0.370367] (pavbot_imu) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o\x1b[0m\n'}
+[0.400346] (-) TimerEvent: {}
+[0.501295] (-) TimerEvent: {}
+[0.602049] (-) TimerEvent: {}
+[0.702832] (-) TimerEvent: {}
+[0.803694] (-) TimerEvent: {}
+[0.904487] (-) TimerEvent: {}
+[1.005274] (-) TimerEvent: {}
+[1.105994] (-) TimerEvent: {}
+[1.206758] (-) TimerEvent: {}
+[1.307820] (-) TimerEvent: {}
+[1.408785] (-) TimerEvent: {}
+[1.509640] (-) TimerEvent: {}
+[1.610392] (-) TimerEvent: {}
+[1.711187] (-) TimerEvent: {}
+[1.812040] (-) TimerEvent: {}
+[1.912829] (-) TimerEvent: {}
+[2.013626] (-) TimerEvent: {}
+[2.114420] (-) TimerEvent: {}
+[2.215293] (-) TimerEvent: {}
+[2.316154] (-) TimerEvent: {}
+[2.417015] (-) TimerEvent: {}
+[2.517907] (-) TimerEvent: {}
+[2.618754] (-) TimerEvent: {}
+[2.719691] (-) TimerEvent: {}
+[2.820513] (-) TimerEvent: {}
+[2.921348] (-) TimerEvent: {}
+[3.022185] (-) TimerEvent: {}
+[3.123170] (-) TimerEvent: {}
+[3.224058] (-) TimerEvent: {}
+[3.324991] (-) TimerEvent: {}
+[3.425857] (-) TimerEvent: {}
+[3.526731] (-) TimerEvent: {}
+[3.627585] (-) TimerEvent: {}
+[3.728516] (-) TimerEvent: {}
+[3.829352] (-) TimerEvent: {}
+[3.930211] (-) TimerEvent: {}
+[4.031145] (-) TimerEvent: {}
+[4.132090] (-) TimerEvent: {}
+[4.232978] (-) TimerEvent: {}
+[4.333798] (-) TimerEvent: {}
+[4.434750] (-) TimerEvent: {}
+[4.535895] (-) TimerEvent: {}
+[4.636848] (-) TimerEvent: {}
+[4.737694] (-) TimerEvent: {}
+[4.838667] (-) TimerEvent: {}
+[4.939598] (-) TimerEvent: {}
+[5.040491] (-) TimerEvent: {}
+[5.141331] (-) TimerEvent: {}
+[5.242162] (-) TimerEvent: {}
+[5.343046] (-) TimerEvent: {}
+[5.444069] (-) TimerEvent: {}
+[5.544927] (-) TimerEvent: {}
+[5.645780] (-) TimerEvent: {}
+[5.746624] (-) TimerEvent: {}
+[5.847461] (-) TimerEvent: {}
+[5.948334] (-) TimerEvent: {}
+[6.049196] (-) TimerEvent: {}
+[6.149995] (-) TimerEvent: {}
+[6.250869] (-) TimerEvent: {}
+[6.351768] (-) TimerEvent: {}
+[6.452689] (-) TimerEvent: {}
+[6.553561] (-) TimerEvent: {}
+[6.654419] (-) TimerEvent: {}
+[6.755337] (-) TimerEvent: {}
+[6.856195] (-) TimerEvent: {}
+[6.957040] (-) TimerEvent: {}
+[7.057906] (-) TimerEvent: {}
+[7.158784] (-) TimerEvent: {}
+[7.259681] (-) TimerEvent: {}
+[7.360975] (-) TimerEvent: {}
+[7.463102] (-) TimerEvent: {}
+[7.563995] (-) TimerEvent: {}
+[7.664849] (-) TimerEvent: {}
+[7.765679] (-) TimerEvent: {}
+[7.866505] (-) TimerEvent: {}
+[7.967369] (-) TimerEvent: {}
+[8.068286] (-) TimerEvent: {}
+[8.169192] (-) TimerEvent: {}
+[8.270056] (-) TimerEvent: {}
+[8.370904] (-) TimerEvent: {}
+[8.471825] (-) TimerEvent: {}
+[8.572684] (-) TimerEvent: {}
+[8.673585] (-) TimerEvent: {}
+[8.774446] (-) TimerEvent: {}
+[8.875297] (-) TimerEvent: {}
+[8.976215] (-) TimerEvent: {}
+[9.077116] (-) TimerEvent: {}
+[9.177999] (-) TimerEvent: {}
+[9.278883] (-) TimerEvent: {}
+[9.379787] (-) TimerEvent: {}
+[9.480675] (-) TimerEvent: {}
+[9.581542] (-) TimerEvent: {}
+[9.682453] (-) TimerEvent: {}
+[9.783290] (-) TimerEvent: {}
+[9.884247] (-) TimerEvent: {}
+[9.985150] (-) TimerEvent: {}
+[10.086017] (-) TimerEvent: {}
+[10.186930] (-) TimerEvent: {}
+[10.287841] (-) TimerEvent: {}
+[10.388710] (-) TimerEvent: {}
+[10.489596] (-) TimerEvent: {}
+[10.590489] (-) TimerEvent: {}
+[10.691363] (-) TimerEvent: {}
+[10.792314] (-) TimerEvent: {}
+[10.893127] (-) TimerEvent: {}
+[10.993968] (-) TimerEvent: {}
+[11.094823] (-) TimerEvent: {}
+[11.195794] (-) TimerEvent: {}
+[11.296609] (-) TimerEvent: {}
+[11.397443] (-) TimerEvent: {}
+[11.498361] (-) TimerEvent: {}
+[11.599283] (-) TimerEvent: {}
+[11.700126] (-) TimerEvent: {}
+[11.800954] (-) TimerEvent: {}
+[11.901788] (-) TimerEvent: {}
+[12.002643] (-) TimerEvent: {}
+[12.103556] (-) TimerEvent: {}
+[12.204494] (-) TimerEvent: {}
+[12.305336] (-) TimerEvent: {}
+[12.406176] (-) TimerEvent: {}
+[12.507075] (-) TimerEvent: {}
+[12.607971] (-) TimerEvent: {}
+[12.708827] (-) TimerEvent: {}
+[12.809648] (-) TimerEvent: {}
+[12.910496] (-) TimerEvent: {}
+[13.011341] (-) TimerEvent: {}
+[13.112227] (-) TimerEvent: {}
+[13.213058] (-) TimerEvent: {}
+[13.313935] (-) TimerEvent: {}
+[13.414959] (-) TimerEvent: {}
+[13.515969] (-) TimerEvent: {}
+[13.616951] (-) TimerEvent: {}
+[13.718043] (-) TimerEvent: {}
+[13.818923] (-) TimerEvent: {}
+[13.919774] (-) TimerEvent: {}
+[14.020602] (-) TimerEvent: {}
+[14.121415] (-) TimerEvent: {}
+[14.222284] (-) TimerEvent: {}
+[14.323108] (-) TimerEvent: {}
+[14.423961] (-) TimerEvent: {}
+[14.524762] (-) TimerEvent: {}
+[14.625626] (-) TimerEvent: {}
+[14.726549] (-) TimerEvent: {}
+[14.827423] (-) TimerEvent: {}
+[14.928287] (-) TimerEvent: {}
+[15.029139] (-) TimerEvent: {}
+[15.130164] (-) TimerEvent: {}
+[15.231227] (-) TimerEvent: {}
+[15.332085] (-) TimerEvent: {}
+[15.432896] (-) TimerEvent: {}
+[15.533785] (-) TimerEvent: {}
+[15.634670] (-) TimerEvent: {}
+[15.735481] (-) TimerEvent: {}
+[15.836396] (-) TimerEvent: {}
+[15.937297] (-) TimerEvent: {}
+[16.038145] (-) TimerEvent: {}
+[16.138961] (-) TimerEvent: {}
+[16.239823] (-) TimerEvent: {}
+[16.340682] (-) TimerEvent: {}
+[16.441537] (-) TimerEvent: {}
+[16.542444] (-) TimerEvent: {}
+[16.643385] (-) TimerEvent: {}
+[16.744405] (-) TimerEvent: {}
+[16.845423] (-) TimerEvent: {}
+[16.946256] (-) TimerEvent: {}
+[17.047199] (-) TimerEvent: {}
+[17.148080] (-) TimerEvent: {}
+[17.248891] (-) TimerEvent: {}
+[17.349724] (-) TimerEvent: {}
+[17.450526] (-) TimerEvent: {}
+[17.551382] (-) TimerEvent: {}
+[17.652313] (-) TimerEvent: {}
+[17.753143] (-) TimerEvent: {}
+[17.854010] (-) TimerEvent: {}
+[17.954880] (-) TimerEvent: {}
+[18.055777] (-) TimerEvent: {}
+[18.156675] (-) TimerEvent: {}
+[18.257510] (-) TimerEvent: {}
+[18.358377] (-) TimerEvent: {}
+[18.459162] (-) TimerEvent: {}
+[18.560082] (-) TimerEvent: {}
+[18.660907] (-) TimerEvent: {}
+[18.761668] (-) TimerEvent: {}
+[18.862490] (-) TimerEvent: {}
+[18.963343] (-) TimerEvent: {}
+[19.064231] (-) TimerEvent: {}
+[19.165065] (-) TimerEvent: {}
+[19.265911] (-) TimerEvent: {}
+[19.366699] (-) TimerEvent: {}
+[19.467575] (-) TimerEvent: {}
+[19.568458] (-) TimerEvent: {}
+[19.669282] (-) TimerEvent: {}
+[19.770115] (-) TimerEvent: {}
+[19.871061] (-) TimerEvent: {}
+[19.972138] (-) TimerEvent: {}
+[20.072941] (-) TimerEvent: {}
+[20.173768] (-) TimerEvent: {}
+[20.274594] (-) TimerEvent: {}
+[20.375493] (-) TimerEvent: {}
+[20.476356] (-) TimerEvent: {}
+[20.577196] (-) TimerEvent: {}
+[20.678045] (-) TimerEvent: {}
+[20.778875] (-) TimerEvent: {}
+[20.879800] (-) TimerEvent: {}
+[20.980871] (-) TimerEvent: {}
+[21.033539] (pavbot_imu) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pavbot_imu\x1b[0m\n'}
+[21.081068] (-) TimerEvent: {}
+[21.182331] (-) TimerEvent: {}
+[21.283328] (-) TimerEvent: {}
+[21.384417] (-) TimerEvent: {}
+[21.485465] (-) TimerEvent: {}
+[21.586792] (-) TimerEvent: {}
+[21.688310] (-) TimerEvent: {}
+[21.789263] (-) TimerEvent: {}
+[21.890087] (-) TimerEvent: {}
+[21.990966] (-) TimerEvent: {}
+[22.091926] (-) TimerEvent: {}
+[22.163328] (pavbot_imu) StdoutLine: {'line': b'[100%] Built target pavbot_imu\n'}
+[22.192128] (-) TimerEvent: {}
+[22.205617] (pavbot_imu) CommandEnded: {'returncode': 0}
+[22.208542] (pavbot_imu) JobProgress: {'identifier': 'pavbot_imu', 'progress': 'install'}
+[22.249377] (pavbot_imu) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu'], 'cwd': '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mrstalford'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mrstalford'), ('OLDPWD', '/home/mrstalford'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1177'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_imu/install:/home/mrstalford/ros2_ws/install:/home/mrstalford/ros2_ws/src/pavbot_gps/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mrstalford'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mrstalford'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mrstalford-desktop:@/tmp/.ICE-unix/1151,unix/mrstalford-desktop:/tmp/.ICE-unix/1151'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6c015b3b_adac_465f_b5f6_b01aaae11ce5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.5UP3J3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.124'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_estop:/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_estop:/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps:/opt/ros/humble')]), 'shell': False}
+[22.283786] (pavbot_imu) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.285191] (pavbot_imu) StdoutLine: {'line': b'-- Installing: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/lib/pavbot_imu/pavbot_imu\n'}
+[22.292289] (-) TimerEvent: {}
+[22.300154] (pavbot_imu) StdoutLine: {'line': b'-- Set runtime path of "/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/lib/pavbot_imu/pavbot_imu" to ""\n'}
+[22.300766] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/launch\n'}
+[22.301353] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/launch/imu.launch.py\n'}
+[22.301747] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/ament_index/resource_index/package_run_dependencies/pavbot_imu\n'}
+[22.302301] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/ament_index/resource_index/parent_prefix_path/pavbot_imu\n'}
+[22.302763] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/environment/ament_prefix_path.sh\n'}
+[22.303802] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/environment/ament_prefix_path.dsv\n'}
+[22.304363] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/environment/path.sh\n'}
+[22.304898] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/environment/path.dsv\n'}
+[22.305361] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/local_setup.bash\n'}
+[22.305814] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/local_setup.sh\n'}
+[22.306202] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/local_setup.zsh\n'}
+[22.306545] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/local_setup.dsv\n'}
+[22.306867] (pavbot_imu) StdoutLine: {'line': b'-- Installing: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.dsv\n'}
+[22.307312] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/ament_index/resource_index/packages/pavbot_imu\n'}
+[22.307824] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/cmake/pavbot_imuConfig.cmake\n'}
+[22.308380] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/cmake/pavbot_imuConfig-version.cmake\n'}
+[22.308856] (pavbot_imu) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu/share/pavbot_imu/package.xml\n'}
+[22.314649] (pavbot_imu) CommandEnded: {'returncode': 0}
+[22.393210] (-) TimerEvent: {}
+[22.403847] (pavbot_imu) JobEnded: {'identifier': 'pavbot_imu', 'rc': 0}
+[22.406721] (-) EventReactorShutdown: {}
