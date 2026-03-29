@@ -227,7 +227,7 @@ class IMU {
             try { vals[i] = std::stod(tok); } catch (...) { return std::nullopt; }
         }
         
-        return Vector3{ rx * vals[0], ry * vals[1], rz * vals[2] };
+        return Vector3{ rx * vals[2], ry * -vals[0], rz * vals[1] };
     }
     
   //-- Private Data -----------------------------------------------
