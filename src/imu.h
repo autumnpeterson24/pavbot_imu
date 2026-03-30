@@ -71,7 +71,9 @@ class IMU {
         double remap_y =  -1.0, // us to map our directions w/o
         double remap_z =  -1.0) // fixing a bunch of math later
       : port(port), baud(baud), timeout_ms(timeout_ms),
-        rx(remap_x), ry(remap_y), rz(remap_z), fd(-1) {}
+        rx(remap_x), ry(remap_y), rz(remap_z), fd(-1) {
+            
+        }
 
     void configure(std::string& port, speed_t baud, int timeout_ms) {
         this->port = port;
@@ -137,7 +139,7 @@ class IMU {
     
     //-- Heading --------------------------------------------------
     bool enableCompass() { return writeCommand(":26,1\n"); }
-    bool queryHeading() { flush(); return writeCommand(":01\n"); }
+    bool queryHeading() { flush(); return writeCommand(":40\n"); }
 
     // Returns degrees [0, 360) CW from true N
     std::optional<double> readHeading() {
@@ -155,18 +157,19 @@ class IMU {
         // Get the data
         double pitch{}, yaw{}, roll{};
         if (!std::getline(ss, tok, ',')) return std::nullopt;
+        try { roll = std::stod(tok); } catch (...) { return std::nullopt; }
+ 
+        if (!std::getline(ss, tok, ',')) return std::nullopt;
         try { pitch = std::stod(tok); } catch (...) { return std::nullopt; }
  
         if (!std::getline(ss, tok, ',')) return std::nullopt;
         try { yaw = std::stod(tok); } catch (...) { return std::nullopt; }
- 
-        if (!std::getline(ss, tok, ',')) return std::nullopt;
-        try { roll = std::stod(tok); } catch (...) { return std::nullopt; }
     
         // Not sure if this quite works-- check here for issues
-        yaw = std::fmod(yaw, 360.0);
-        if (yaw < 0.0) yaw += 360.0;
-        return yaw; 
+        // yaw = std::fmod(yaw*57, 360.0);
+        // if (yaw< 0.0) yaw += 360.0;
+        double heading = (yaw + 0.6) * 600 - 60;
+        return heading; 
     }
     
     //-- Position -------------------------------------------------
