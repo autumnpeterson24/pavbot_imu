@@ -3,6 +3,8 @@
 // | Purpose: Act as interfacing class to get navigation data from
 // |          the Yost 3-Space IMU v1.0 using ASCII commands.
 // | Version:
+// |   3/28/26     Michael Stalford     Heading made more robust;
+// |                                    other modes completed
 // |   3/26/26     Michael Stalford     Born anew to allow for all
 // |                                    modes beyond heading to be
 // |                                    collected
@@ -15,17 +17,20 @@
 // O== Notes ======================================================
 // | Yost 3-Space IMU v1.0 ASCII Commands (linked to Autumn's req)
 // | FWD: +x      LEFT: +y     UP: +z
+// | 
+// | Tares on startup.
 // |---------------------------------------------------------------
 // |  1. Heading           0-356 degrees CW from true North
 // |
 // |    :26,1\n    ->    Enable compass. Must be done on init so
 // |                     compass becomes active.
-// |    :01\n      ->    Get filtered Euler angles as:
+// |    :07\n      ->    Get UNTARED Euler angles:
 // |                      "pitch,yaw,roll\r\n"     (degrees)
 // |
 // |  2. Orientation       Quaternion (x, y, z, w)
 // |  
-// |    :06\n      ->    Get quaternion as:
+// |    :96\n      ->    Tare orientation based on current pos.
+// |    :00\n      ->    Get TARED quaternion as:
 // |                      "x,y,z,w\r\n"            (unit quat)
 // |
 // |  3. Angular Velocity  rad/s, ASSUMED CW
@@ -50,14 +55,12 @@
 #include <sstream>
 #include <cmath>
 
+// O== Defines ====================================================
+#define MAG_DECLINATION -9.5
+
 // O== Tools o' The Trade =========================================
 struct Quaternion {double x, y, z, w; };
 struct Vector3    {double x, y, z; };
-struct IMUPacket  {
-    double      heading;
-    Quaternion  orientation;
-    Vector3     angVel;
-}; 
 
 // O== Class ======================================================
 class IMU {
@@ -68,12 +71,10 @@ class IMU {
         speed_t baud =     B115200,
         int timeout_ms =   500,
         double remap_x =   1.0, // Using this scheme should allow
-        double remap_y =  -1.0, // us to map our directions w/o
-        double remap_z =  -1.0) // fixing a bunch of math later
+        double remap_y =   1.0, // us to map our directions w/o
+        double remap_z =   1.0) // fixing a bunch of math later
       : port(port), baud(baud), timeout_ms(timeout_ms),
-        rx(remap_x), ry(remap_y), rz(remap_z), fd(-1) {
-            
-        }
+        rx(remap_x), ry(remap_y), rz(remap_z), fd(-1) {}
 
     void configure(std::string& port, speed_t baud, int timeout_ms) {
         this->port = port;
@@ -139,7 +140,7 @@ class IMU {
     
     //-- Heading --------------------------------------------------
     bool enableCompass() { return writeCommand(":26,1\n"); }
-    bool queryHeading() { flush(); return writeCommand(":40\n"); }
+    bool queryHeading() { flush(); return writeCommand(":07\n"); }
 
     // Returns degrees [0, 360) CW from true N
     std::optional<double> readHeading() {
@@ -157,23 +158,23 @@ class IMU {
         // Get the data
         double pitch{}, yaw{}, roll{};
         if (!std::getline(ss, tok, ',')) return std::nullopt;
-        try { roll = std::stod(tok); } catch (...) { return std::nullopt; }
- 
-        if (!std::getline(ss, tok, ',')) return std::nullopt;
         try { pitch = std::stod(tok); } catch (...) { return std::nullopt; }
  
         if (!std::getline(ss, tok, ',')) return std::nullopt;
         try { yaw = std::stod(tok); } catch (...) { return std::nullopt; }
+ 
+        if (!std::getline(ss, tok, ',')) return std::nullopt;
+        try { roll = std::stod(tok); } catch (...) { return std::nullopt; }
     
         // Not sure if this quite works-- check here for issues
-        // yaw = std::fmod(yaw*57, 360.0);
-        // if (yaw< 0.0) yaw += 360.0;
-        double heading = (yaw + 0.6) * 600 - 60;
-        return heading; 
+        yaw = std::fmod(yaw * 180 / M_PI, 360.0) -90 + MAG_DECLINATION;
+        if (yaw < 0.0) yaw += 360.0;
+        return yaw; 
     }
     
     //-- Position -------------------------------------------------
-    bool queryPosition() { flush(); return writeCommand(":06\n"); }
+    bool tare() { return writeCommand(":96\n"); }
+    bool queryPosition() { flush(); return writeCommand(":00\n"); }
         
     std::optional<Quaternion> readPosition() {
         // Query data and if it fails return nothing
@@ -194,11 +195,12 @@ class IMU {
             try { vals[i] = std::stod(tok); } catch (...) { return std::nullopt; }
         }
         
-        // I have not verified this but should work for remapping
+        // Note remapping for FWD: X, LFT: Y, UP: Z
+        // Default places
         Quaternion q;
-        q.x = rx * vals[0];
-        q.y = ry * vals[1];
-        q.z = rz * vals[2];
+        q.x = rx * vals[2];    // x = +z
+        q.y = ry * -vals[0];    // y = -x
+        q.z = rz * vals[1];    // z = y
         q.w =       vals[3];
         return q;
     }
@@ -225,21 +227,7 @@ class IMU {
             try { vals[i] = std::stod(tok); } catch (...) { return std::nullopt; }
         }
         
-        return Vector3{ rx * vals[0], ry * vals[1], rz * vals[2] };
-    }
-    
-    // Synthesize, baby! ------------------------------------------
-    std::optional<IMUPacket> readAll() {
-        auto h = readHeading();
-        if (!h) return std::nullopt;
-        
-        auto p = readPosition();
-        if (!p) return std::nullopt;
-        
-        auto v = readVelocity();
-        if (!v) return std::nullopt;
-        
-        return IMUPacket{ *h, *p, *v };
+        return Vector3{ rx * vals[2], ry * -vals[0], rz * vals[1] };
     }
     
   //-- Private Data -----------------------------------------------
