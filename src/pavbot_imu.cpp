@@ -116,7 +116,7 @@ public:
     if (imu.open()) {
       // Success
       RCLCPP_INFO(get_logger(), "Successful connection to IMU. Awaiting data packets...");
-      imu.enableCompass();
+      imu.disableCompass();
       imu.tare();
     } else {
       // Failure

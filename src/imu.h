@@ -139,7 +139,7 @@ class IMU {
     }
     
     //-- Heading --------------------------------------------------
-    bool enableCompass() { return writeCommand(":26,1\n"); }
+    bool disableCompass() { return writeCommand(":109,0\n"); }
     bool queryHeading() { flush(); return writeCommand(":07\n"); }
 
     // Returns degrees [0, 360) CW from true N
