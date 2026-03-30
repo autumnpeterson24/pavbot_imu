@@ -1,0 +1,33 @@
+[0.072s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.334s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.468s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[11.708s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In constructor ‘[01m[KPavbotIMU::PavbotIMU()[m[K’:
+[11.708s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:102:58:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’; did you mean ‘[01m[Kstd_msgs::msg::Float32[m[K’?
+[11.709s]   102 |     imu_heading_pub = create_publisher<sensor_msgs::msg::[01;31m[KFloat32[m[K>("/sensors/imu/data", rclcpp::SensorDataQoS());
+[11.711s]       |                                                          [01;31m[K^~~~~~~[m[K
+[11.712s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp:7[m[K,
+[11.713s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:22[m[K:
+[11.714s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp:123:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Float32[m[K’ declared here
+[11.716s]   123 | using [01;36m[KFloat32[m[K =
+[11.717s]       |       [01;36m[K^~~~~~~[m[K
+[11.717s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:102:66:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPavbotIMU::create_publisher<<expression error> >(const char [18], rclcpp::SensorDataQoS)[m[K’
+[11.718s]   102 | imu_heading_pub = [01;31m[Kcreate_publisher<sensor_msgs::msg::Float32>("/sensors/imu/data", rclcpp::SensorDataQoS())[m[K;
+[11.718s]       |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.719s] 
+[11.719s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[11.719s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.720s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.720s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.721s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:21[m[K:
+[11.721s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[11.722s]    73 | [01;36m[KNode[m[K::create_publisher(
+[11.722s]       | [01;36m[K^~~~[m[K
+[11.722s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.723s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:102:66:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.723s]   102 | imu_heading_pub = [01;31m[Kcreate_publisher<sensor_msgs::msg::Float32>("/sensors/imu/data", rclcpp::SensorDataQoS())[m[K;
+[11.724s]       |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.724s] 
+[15.219s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[15.220s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[15.221s] gmake: *** [Makefile:146: all] Error 2
+[15.229s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4

@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In member function ‘[01m[Kvoid PavbotIMU::update()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:66:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Quaternion>[m[K’ has no member named ‘[01m[Kx[m[K’
+   66 |     dataMsg.orientation.x = p.[01;31m[Kx[m[K;
+      |                               [01;31m[K^[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:67:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Quaternion>[m[K’ has no member named ‘[01m[Ky[m[K’
+   67 |     dataMsg.orientation.y = p.[01;31m[Ky[m[K;
+      |                               [01;31m[K^[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:68:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Quaternion>[m[K’ has no member named ‘[01m[Kz[m[K’
+   68 |     dataMsg.orientation.z = p.[01;31m[Kz[m[K;
+      |                               [01;31m[K^[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:69:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Quaternion>[m[K’ has no member named ‘[01m[Kw[m[K’
+   69 |     dataMsg.orientation.w = p.[01;31m[Kw[m[K;
+      |                               [01;31m[K^[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:71:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Vector3>[m[K’ has no member named ‘[01m[Kx[m[K’
+   71 |     dataMsg.angular_velocity.x = v.[01;31m[Kx[m[K;
+      |                                    [01;31m[K^[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:72:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Vector3>[m[K’ has no member named ‘[01m[Ky[m[K’
+   72 |     dataMsg.angular_velocity.y = v.[01;31m[Ky[m[K;
+      |                                    [01;31m[K^[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:73:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::optional<Vector3>[m[K’ has no member named ‘[01m[Kz[m[K’
+   73 |     dataMsg.angular_velocity.z = v.[01;31m[Kz[m[K;
+      |                                    [01;31m[K^[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:79:23:[m[K [01;31m[Kerror: [m[Kinvalid ‘[01m[Kstatic_cast[m[K’ from type ‘[01m[Kstd::optional<double>[m[K’ to type ‘[01m[Kfloat[m[K’
+   79 |     headingMsg.data = [01;31m[Kstatic_cast<float>(h)[m[K;
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,33 @@
+[0.073s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4
+[0.263s] [35m[1mConsolidate compiler generated dependencies of target pavbot_imu[0m
+[0.365s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o[0m
+[10.895s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:41:36:[m[K [01;31m[Kerror: [m[K‘[01m[KImu[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[Ksensor_msgs::msg::Imu[m[K’?
+[10.896s]    41 |   rclcpp::Publisher<std_msgs::msg::[01;31m[KImu[m[K>::SharedPtr imu_data_pub;
+[10.896s]       |                                    [01;31m[K^~~[m[K
+[10.897s] In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/imu.hpp:7[m[K,
+[10.897s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:23[m[K:
+[10.897s] [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp:218:7:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::Imu[m[K’ declared here
+[10.898s]   218 | using [01;36m[KImu[m[K =
+[10.898s]       |       [01;36m[K^~~[m[K
+[10.899s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:41:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[10.899s]    41 |   rclcpp::Publisher<std_msgs::msg::Imu[01;31m[K>[m[K::SharedPtr imu_data_pub;
+[10.899s]       |                                       [01;31m[K^[m[K
+[10.900s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:41:42:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[10.900s]    41 |   rclcpp::Publisher<std_msgs::msg::Imu>::[01;31m[KSharedPtr[m[K imu_data_pub;
+[10.901s]       |                                          [01;31m[K^~~~~~~~~[m[K
+[10.901s]       |                                                   [32m[K;[m[K
+[10.904s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:41:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_data_pub[m[K’ does not name a type
+[10.905s]    41 |   rclcpp::Publisher<std_msgs::msg::Imu>::SharedPtr [01;31m[Kimu_data_pub[m[K;
+[10.905s]       |                                                    [01;31m[K^~~~~~~~~~~~[m[K
+[10.943s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In member function ‘[01m[Kvoid PavbotIMU::update()[m[K’:
+[10.943s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_data_pub[m[K’ was not declared in this scope
+[10.944s]    87 |     [01;31m[Kimu_data_pub[m[K->publish(dataMsg);
+[10.944s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[10.974s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:[m[K In constructor ‘[01m[KPavbotIMU::PavbotIMU()[m[K’:
+[10.975s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_imu/src/pavbot_imu.cpp:101:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_pub[m[K’ was not declared in this scope
+[10.975s]   101 |     [01;31m[Kimu_pub[m[K = create_publisher<std_msgs::msg::Float32>("/sensors/imu/heading", rclcpp::SensorDataQoS());
+[10.976s]       |     [01;31m[K^~~~~~~[m[K
+[14.021s] gmake[2]: *** [CMakeFiles/pavbot_imu.dir/build.make:76: CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o] Error 1
+[14.022s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_imu.dir/all] Error 2
+[14.023s] gmake: *** [Makefile:146: all] Error 2
+[14.032s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_imu/build/pavbot_imu -- -j4 -l4

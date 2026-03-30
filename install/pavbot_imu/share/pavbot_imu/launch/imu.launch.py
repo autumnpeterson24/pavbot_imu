@@ -24,7 +24,8 @@ def generate_launch_description():
             name='pavbot_imu',
             output='screen',
             parameters=[{
-                'port': '/dev/ttyUSB0',
+                'port': '/dev/serial/by-id/usb-FTDI_FT230X_Basic_UART_DO00UGIH-if00-port0',
+                #'port': '/dev/ttyUSB0',
                 'baud': 115200,
                 'timeout_ms': 500
             }]

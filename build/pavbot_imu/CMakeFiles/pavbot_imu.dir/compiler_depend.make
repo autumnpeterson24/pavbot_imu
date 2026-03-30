@@ -704,17 +704,24 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/imu.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /usr/include/c++/11/math.h \
   ../../src/imu.h \
   /usr/include/fcntl.h \
@@ -764,17 +771,27 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
 
 ../../src/imu.h:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/imu.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
@@ -832,8 +849,6 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp:
@@ -851,6 +866,8 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
 /opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp:
 
@@ -972,6 +989,8 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
 
 /usr/include/aarch64-linux-gnu/bits/iscanonical.h:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__builder.hpp:
+
 /usr/include/c++/11/bits/stl_multiset.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdio_lim.h:
@@ -1062,8 +1081,6 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
 
 /usr/include/c++/11/cerrno:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp:
-
 /usr/include/aarch64-linux-gnu/c++/11/bits/error_constants.h:
 
 /usr/include/c++/11/ctime:
@@ -1144,8 +1161,6 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
 
 /usr/include/c++/11/bits/quoted_string.h:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
-
 /usr/include/c++/11/tr1/beta_function.tcc:
 
 /usr/include/aarch64-linux-gnu/bits/waitstatus.h:
@@ -1175,6 +1190,8 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
 /usr/include/wchar.h:
 
 /usr/include/c++/11/iosfwd:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
 
 /usr/include/c++/11/initializer_list:
 
@@ -1457,6 +1474,8 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_base.hpp:
 
 /usr/include/alloca.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
 
@@ -2153,6 +2172,8 @@ CMakeFiles/pavbot_imu.dir/src/pavbot_imu.cpp.o: ../../src/pavbot_imu.cpp \
 /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
 
