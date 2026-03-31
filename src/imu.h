@@ -140,6 +140,7 @@ class IMU {
     
     //-- Heading --------------------------------------------------
     bool disableCompass() { return writeCommand(":109,0\n"); }
+    bool calibrateGyro() { return writeCommand(":165\n"); }
     bool queryHeading() { flush(); return writeCommand(":07\n"); }
 
     // Returns degrees [0, 360) CW from true N

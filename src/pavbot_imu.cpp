@@ -117,6 +117,7 @@ public:
       // Success
       RCLCPP_INFO(get_logger(), "Successful connection to IMU. Awaiting data packets...");
       imu.disableCompass();
+      imu.calibrateGyro();
       imu.tare();
     } else {
       // Failure
